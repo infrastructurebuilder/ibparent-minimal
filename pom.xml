@@ -139,6 +139,14 @@
       </roles>
       <timezone>Central</timezone>
     </developer>
+    <developer>
+      <id>byronic</id>
+      <email>byron.lagrone@gmail.com</email>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>Central</timezone>
+    </developer>
   </developers>
 
   <licenses>
