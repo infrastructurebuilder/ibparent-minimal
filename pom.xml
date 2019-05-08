@@ -10,6 +10,7 @@
   <name>${project.artifactId}</name>
   <description>Root POM set for IB projects</description>
   <inceptionYear>2019</inceptionYear>
+  <url>https://github.com/${team.name}/${project.artifactId}</url>
   <properties>
     <maven.version>3.6.1</maven.version>
     <groovy.version>2.5.6</groovy.version>
