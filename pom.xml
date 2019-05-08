@@ -107,7 +107,9 @@
     <license.maven.plugin>3.0</license.maven.plugin>
     <liquibase.version>3.6.3</liquibase.version>
     <packer.maven.plugin.version>1.0.0-SNAPSHOT</packer.maven.plugin.version>
-    <redline.maven.plugin.version>0.0.7</redline.maven.plugin.version>
+    <!-- TODO Fix redline
+    <redline.maven.plugin.version>UNKNOWN</redline.maven.plugin.version>
+     -->
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
 
   </properties>
@@ -224,12 +226,13 @@
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${maven.assembly.plugin.version}</version>
         </plugin>
+        <!-- TODO Fix Redline
         <plugin>
           <groupId>org.infrastructurebuilder</groupId>
           <artifactId>redline-maven-plugin</artifactId>
           <version>${redline.maven.plugin.version}</version>
         </plugin>
-
+         -->
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
