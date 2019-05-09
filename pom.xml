@@ -62,7 +62,7 @@
     <maven.wagon.version>3.3.2</maven.wagon.version>
 
 
-    <ib.logconfig.version>0.9.0</ib.logconfig.version> <!--  A default.  This may or may not change over time -->
+    <ib.logconfig.version>0.9.0-SNAPSHOT</ib.logconfig.version> <!--  A default.  This may or may not change over time -->
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
     <ib.site.repo>repository/sites</ib.site.repo>
     <ib.site.root>${ib.site.scheme}://${ib.site.server}/${ib.site.repo}</ib.site.root>
