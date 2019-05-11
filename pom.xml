@@ -186,14 +186,14 @@
       <dependency>
         <groupId>org.infrastructurebuilder.util</groupId>
         <artifactId>maven-import-pom</artifactId>
-        <version>${maven.version}.2</version>
+        <version>${maven.version}.3-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.util</groupId>
         <artifactId>plexus-import-pom</artifactId>
-        <version>${maven.version}.2</version>
+        <version>${maven.version}.3-SNAPSHOT</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
