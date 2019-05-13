@@ -184,16 +184,9 @@
         <version>${maven.shared.filtering.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.infrastructurebuilder.util</groupId>
-        <artifactId>maven-import-pom</artifactId>
-        <version>${maven.version}.3-SNAPSHOT</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.infrastructurebuilder.util</groupId>
-        <artifactId>plexus-import-pom</artifactId>
-        <version>${maven.version}.3-SNAPSHOT</version>
+        <groupId>org.infrastructurebuilder</groupId>
+        <artifactId>maven-import-bom</artifactId>
+        <version>${maven.version}.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
