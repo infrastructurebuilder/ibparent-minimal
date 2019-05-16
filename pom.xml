@@ -249,7 +249,11 @@
           <version>${maven.enforcer.plugin.version}</version>
           <configuration>
             <rules>
-              <requireMavenVersion>[${maven.version},)</requireMavenVersion>
+              <requireMavenVersion>
+                <version>
+                  [${maven.version},)
+                </version>
+              </requireMavenVersion>
               <banDuplicatePomDependencyVersions />
               <requireNoRepositories />
             </rules>
@@ -496,6 +500,18 @@
       </testResource>
     </testResources>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>default</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
