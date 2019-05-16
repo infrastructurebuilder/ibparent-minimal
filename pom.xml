@@ -83,11 +83,11 @@
     <hashicorp.nomad.sha1.windows>c6c50ca52a88ca0063e4606fbd9c3613a1765bba</hashicorp.nomad.sha1.windows>
     <hashicorp.nomad.url>https://releases.hashicorp.com/nomad/${hashicorp.nomad.version}/nomad_${hashicorp.nomad.version}_${hashicorp.os}_amd64.zip</hashicorp.nomad.url>
     <hashicorp.nomad.version>0.9.0</hashicorp.nomad.version>
-    <hashicorp.packer.sha1.darwin>ea430fae10fb409b93d827afeaa911d8c29c92c8</hashicorp.packer.sha1.darwin>
-    <hashicorp.packer.sha1.linux>e135f1fb2a43dc48a4338779bb15f845bbe025e1</hashicorp.packer.sha1.linux>
-    <hashicorp.packer.sha1.windows>862a284bda3ad7ca26864308ca9b9402113faf27</hashicorp.packer.sha1.windows>
+    <hashicorp.packer.sha1.darwin>9283198c2eaedb9cf706cae1c371758edfebafff</hashicorp.packer.sha1.darwin>
+    <hashicorp.packer.sha1.linux>7ff45c44adc9ac8baa58f6de2bdfac38ede0de96</hashicorp.packer.sha1.linux>
+    <hashicorp.packer.sha1.windows>cc4a5cdbdd3254cf30a886f6f31ad491d4fd068a</hashicorp.packer.sha1.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
-    <hashicorp.packer.version>1.4.0</hashicorp.packer.version>
+    <hashicorp.packer.version>1.4.1</hashicorp.packer.version>
     <hashicorp.terraform.sha1.darwin>f1c4ddb4b63d9d28a6f734c3297dc0006a864c0c</hashicorp.terraform.sha1.darwin>
     <hashicorp.terraform.sha1.linux>85727ac5ab5f2e620b43b3c8cb7d0bc0ab166be2</hashicorp.terraform.sha1.linux>
     <hashicorp.terraform.sha1.windows>04cc79df536e65e3dbc479fd6b75573acb5a33a4</hashicorp.terraform.sha1.windows>
