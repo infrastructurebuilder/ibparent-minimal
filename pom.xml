@@ -15,7 +15,7 @@
   <url>https://github.com/${team.name}/${project.artifactId}</url>
   <properties>
     <maven.version>3.6.1</maven.version>
-    <groovy.version>2.5.6</groovy.version>
+    <groovy.version>2.5.7</groovy.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
 
     <git.http.url>${git.scm.url}.git</git.http.url>
