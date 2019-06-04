@@ -71,11 +71,11 @@
     <ib.license.email>admin@infrastructurebuilder.org</ib.license.email>
     <ib.license.name>admin</ib.license.name>
 
-    <hashicorp.consul.sha1.darwin>6449a5c146cc7799bcd2f9f6a61a87a23311bba8</hashicorp.consul.sha1.darwin>
-    <hashicorp.consul.sha1.linux>57a7e4e9e10e8e288ab92d7b3d6a28957fc6555a</hashicorp.consul.sha1.linux>
-    <hashicorp.consul.sha1.windows>abe78a3320080a33ece3db0e72d1a2a9c97e7745</hashicorp.consul.sha1.windows>
+    <hashicorp.consul.sha1.darwin>4004bc6bcce76ab1f7a7e4e2500b73c1b4746874</hashicorp.consul.sha1.darwin>
+    <hashicorp.consul.sha1.linux>0a872b75a957e0a183f0359c4c44032ee20b3dc3</hashicorp.consul.sha1.linux>
+    <hashicorp.consul.sha1.windows>fcf018b0b91f01afa517d7006bf17eb6da69550e</hashicorp.consul.sha1.windows>
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
-    <hashicorp.consul.version>1.5.0</hashicorp.consul.version>
+    <hashicorp.consul.version>1.5.1</hashicorp.consul.version>
     <hashicorp.nomad.sha1.darwin>fbd63626935b990e8b7a070cfbd1da282af51370</hashicorp.nomad.sha1.darwin>
     <hashicorp.nomad.sha1.linux>79f87804f5fc32a641f9c773e056e1a99fefae25</hashicorp.nomad.sha1.linux>
     <hashicorp.nomad.sha1.windows>6366fd65af7d0fc4c279dfabb08c720d471f03ee</hashicorp.nomad.sha1.windows>
