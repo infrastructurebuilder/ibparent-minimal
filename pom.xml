@@ -86,11 +86,11 @@
     <hashicorp.packer.sha1.windows>cc4a5cdbdd3254cf30a886f6f31ad491d4fd068a</hashicorp.packer.sha1.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
     <hashicorp.packer.version>1.4.1</hashicorp.packer.version>
-    <hashicorp.terraform.sha1.darwin>f1c4ddb4b63d9d28a6f734c3297dc0006a864c0c</hashicorp.terraform.sha1.darwin>
-    <hashicorp.terraform.sha1.linux>85727ac5ab5f2e620b43b3c8cb7d0bc0ab166be2</hashicorp.terraform.sha1.linux>
-    <hashicorp.terraform.sha1.windows>04cc79df536e65e3dbc479fd6b75573acb5a33a4</hashicorp.terraform.sha1.windows>
+    <hashicorp.terraform.sha1.darwin>347de0189954c8858854a9cca024761d00af6aa2</hashicorp.terraform.sha1.darwin>
+    <hashicorp.terraform.sha1.linux>9f622ca2d582f8a4de9e19f2a86d5410ec5591f2</hashicorp.terraform.sha1.linux>
+    <hashicorp.terraform.sha1.windows>2e6f10b085636f7b7907190c2b9b5eeae1e06b9d</hashicorp.terraform.sha1.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
-    <hashicorp.terraform.version>0.11.13</hashicorp.terraform.version>
+    <hashicorp.terraform.version>0.11.14</hashicorp.terraform.version>
     <hashicorp.vault.sha1.darwin>9f382e98f93551b0e139366ea725a461d4b49664</hashicorp.vault.sha1.darwin>
     <hashicorp.vault.sha1.linux>d05b738ed3b4f79b1898219f8c77ffbea61cf3ec</hashicorp.vault.sha1.linux>
     <hashicorp.vault.sha1.windows>24ee422724f4962938cdaa6ec9ab1aafeb95f913</hashicorp.vault.sha1.windows>
