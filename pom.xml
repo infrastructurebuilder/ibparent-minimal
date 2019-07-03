@@ -35,7 +35,7 @@
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     <maven.dependency.plugin.version>3.1.1</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <maven.download.plugin.version>1.4.1</maven.download.plugin.version>
+    <maven.download.plugin.version>1.4.2</maven.download.plugin.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
@@ -51,13 +51,13 @@
     <maven.remote.resources.version>1.6.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
     <maven.shared.filtering.version>3.1.1</maven.shared.filtering.version>
-    <maven.site.doxia.model.version>1.8</maven.site.doxia.model.version>
+    <maven.site.doxia.model.version>1.9</maven.site.doxia.model.version>
     <maven.site.fluid.skin.version>1.5</maven.site.fluid.skin.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
     <maven.site.plugin.version>3.7.1</maven.site.plugin.version>
-    <maven.source.plugin.version>3.0.1</maven.source.plugin.version>
+    <maven.source.plugin.version>3.1.0</maven.source.plugin.version>
     <maven.versions.plugin.version>2.7</maven.versions.plugin.version>
-    <maven.wagon.version>3.3.2</maven.wagon.version>
+    <maven.wagon.version>3.3.3</maven.wagon.version>
 
 
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
@@ -81,11 +81,11 @@
     <hashicorp.nomad.sha1.windows>6366fd65af7d0fc4c279dfabb08c720d471f03ee</hashicorp.nomad.sha1.windows>
     <hashicorp.nomad.url>https://releases.hashicorp.com/nomad/${hashicorp.nomad.version}/nomad_${hashicorp.nomad.version}_${hashicorp.os}_amd64.zip</hashicorp.nomad.url>
     <hashicorp.nomad.version>0.9.1</hashicorp.nomad.version>
-    <hashicorp.packer.sha1.darwin>9283198c2eaedb9cf706cae1c371758edfebafff</hashicorp.packer.sha1.darwin>
-    <hashicorp.packer.sha1.linux>7ff45c44adc9ac8baa58f6de2bdfac38ede0de96</hashicorp.packer.sha1.linux>
-    <hashicorp.packer.sha1.windows>cc4a5cdbdd3254cf30a886f6f31ad491d4fd068a</hashicorp.packer.sha1.windows>
+    <hashicorp.packer.sha1.darwin>5e4ad4cdf522d9a6fd6f0fe3a8a5e50c7f3ca133</hashicorp.packer.sha1.darwin>
+    <hashicorp.packer.sha1.linux>bbef69e6c54d79d440ec740dd054348e2bc01b65</hashicorp.packer.sha1.linux>
+    <hashicorp.packer.sha1.windows>27e458f1811f8a72cb6c0c558f16a6c7ba0a70d8</hashicorp.packer.sha1.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
-    <hashicorp.packer.version>1.4.1</hashicorp.packer.version>
+    <hashicorp.packer.version>1.4.2</hashicorp.packer.version>
     <hashicorp.terraform.sha1.darwin>347de0189954c8858854a9cca024761d00af6aa2</hashicorp.terraform.sha1.darwin>
     <hashicorp.terraform.sha1.linux>9f622ca2d582f8a4de9e19f2a86d5410ec5591f2</hashicorp.terraform.sha1.linux>
     <hashicorp.terraform.sha1.windows>2e6f10b085636f7b7907190c2b9b5eeae1e06b9d</hashicorp.terraform.sha1.windows>
@@ -97,7 +97,7 @@
     <hashicorp.vault.url>https://releases.hashicorp.com/vault/${hashicorp.vault.version}/vault_${hashicorp.vault.version}_${hashicorp.os}_amd64.zip</hashicorp.vault.url>
     <hashicorp.vault.version>1.1.2</hashicorp.vault.version>
 
-    <doxia.site.renderer.version>1.8.1</doxia.site.renderer.version>
+    <doxia.site.renderer.version>1.9.1</doxia.site.renderer.version>
     <frontend.maven.plugin.version>1.7.6</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <junit.version>4.12</junit.version>
@@ -198,7 +198,7 @@
       <dependency>
         <groupId>org.infrastructurebuilder.util</groupId>
         <artifactId>groovy-import-pom</artifactId>
-        <version>${groovy.version}.1-SNAPSHOT</version>
+        <version>${groovy.version}.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -474,6 +474,7 @@
             </excludes>
             <mapping>
               <bash>SCRIPT_STYLE</bash>
+              <tf>SCRIPT_STYLE</tf>
             </mapping>
           </configuration>
         </plugin>
