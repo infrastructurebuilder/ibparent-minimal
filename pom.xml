@@ -5,7 +5,7 @@
 	<!-- A reasonable base group -->
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>ibparent-minimal</artifactId>
-  <version>5-SNAPSHOT</version>
+  <version>5</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Root POM set for IB projects</description>
@@ -161,7 +161,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
+    <tag>ibparent-minimal-5</tag>
   </scm>
 
   <distributionManagement>
