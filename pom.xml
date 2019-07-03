@@ -71,31 +71,31 @@
     <ib.license.email>admin@infrastructurebuilder.org</ib.license.email>
     <ib.license.name>admin</ib.license.name>
 
-    <hashicorp.consul.sha1.darwin>4004bc6bcce76ab1f7a7e4e2500b73c1b4746874</hashicorp.consul.sha1.darwin>
-    <hashicorp.consul.sha1.linux>0a872b75a957e0a183f0359c4c44032ee20b3dc3</hashicorp.consul.sha1.linux>
-    <hashicorp.consul.sha1.windows>fcf018b0b91f01afa517d7006bf17eb6da69550e</hashicorp.consul.sha1.windows>
+    <hashicorp.consul.sha1.darwin>ac8f3a0080497e1f39384c9a5ae20bde82d6edd4</hashicorp.consul.sha1.darwin>
+    <hashicorp.consul.sha1.linux>9a471cd3e5d99c2bb826f4cca2243108da7903cc</hashicorp.consul.sha1.linux>
+    <hashicorp.consul.sha1.windows>81182d42c439450f30ab6e308d44b99722b5421d</hashicorp.consul.sha1.windows>
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
-    <hashicorp.consul.version>1.5.1</hashicorp.consul.version>
-    <hashicorp.nomad.sha1.darwin>fbd63626935b990e8b7a070cfbd1da282af51370</hashicorp.nomad.sha1.darwin>
-    <hashicorp.nomad.sha1.linux>79f87804f5fc32a641f9c773e056e1a99fefae25</hashicorp.nomad.sha1.linux>
-    <hashicorp.nomad.sha1.windows>6366fd65af7d0fc4c279dfabb08c720d471f03ee</hashicorp.nomad.sha1.windows>
+    <hashicorp.consul.version>1.5.2</hashicorp.consul.version>
+    <hashicorp.nomad.sha1.darwin>4ef17c4b04596d946ba5722c13a5965a77aaf9af</hashicorp.nomad.sha1.darwin>
+    <hashicorp.nomad.sha1.linux>e3826fdad70203b2c6b33052c3d13bacf99d2e5a</hashicorp.nomad.sha1.linux>
+    <hashicorp.nomad.sha1.windows>698bba85357e3504ea1dceda92ceffb7855cef13</hashicorp.nomad.sha1.windows>
     <hashicorp.nomad.url>https://releases.hashicorp.com/nomad/${hashicorp.nomad.version}/nomad_${hashicorp.nomad.version}_${hashicorp.os}_amd64.zip</hashicorp.nomad.url>
-    <hashicorp.nomad.version>0.9.1</hashicorp.nomad.version>
+    <hashicorp.nomad.version>0.9.3</hashicorp.nomad.version>
     <hashicorp.packer.sha1.darwin>5e4ad4cdf522d9a6fd6f0fe3a8a5e50c7f3ca133</hashicorp.packer.sha1.darwin>
     <hashicorp.packer.sha1.linux>bbef69e6c54d79d440ec740dd054348e2bc01b65</hashicorp.packer.sha1.linux>
     <hashicorp.packer.sha1.windows>27e458f1811f8a72cb6c0c558f16a6c7ba0a70d8</hashicorp.packer.sha1.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
     <hashicorp.packer.version>1.4.2</hashicorp.packer.version>
-    <hashicorp.terraform.sha1.darwin>347de0189954c8858854a9cca024761d00af6aa2</hashicorp.terraform.sha1.darwin>
-    <hashicorp.terraform.sha1.linux>9f622ca2d582f8a4de9e19f2a86d5410ec5591f2</hashicorp.terraform.sha1.linux>
-    <hashicorp.terraform.sha1.windows>2e6f10b085636f7b7907190c2b9b5eeae1e06b9d</hashicorp.terraform.sha1.windows>
+    <hashicorp.terraform.sha1.darwin>b8b5fbd42c58f9cef3a6059eb2cd37c55e22642c</hashicorp.terraform.sha1.darwin>
+    <hashicorp.terraform.sha1.linux>1845b429de1ff189d98c6759b1aff03487fb88c3</hashicorp.terraform.sha1.linux>
+    <hashicorp.terraform.sha1.windows>c9e216d47e0b240612a8125788d36d3cbf427c37</hashicorp.terraform.sha1.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
-    <hashicorp.terraform.version>0.11.14</hashicorp.terraform.version>
-    <hashicorp.vault.sha1.darwin>9f382e98f93551b0e139366ea725a461d4b49664</hashicorp.vault.sha1.darwin>
-    <hashicorp.vault.sha1.linux>d05b738ed3b4f79b1898219f8c77ffbea61cf3ec</hashicorp.vault.sha1.linux>
-    <hashicorp.vault.sha1.windows>24ee422724f4962938cdaa6ec9ab1aafeb95f913</hashicorp.vault.sha1.windows>
+    <hashicorp.terraform.version>0.12.3</hashicorp.terraform.version>
+    <hashicorp.vault.sha1.darwin>abec475405530e30d1451805352a999083735047</hashicorp.vault.sha1.darwin>
+    <hashicorp.vault.sha1.linux>f5c5e11000a0422145ac79b771a172ff43dfc3b2</hashicorp.vault.sha1.linux>
+    <hashicorp.vault.sha1.windows>ba606d8f31838c70d3498fe3983185f9a869bd31</hashicorp.vault.sha1.windows>
     <hashicorp.vault.url>https://releases.hashicorp.com/vault/${hashicorp.vault.version}/vault_${hashicorp.vault.version}_${hashicorp.os}_amd64.zip</hashicorp.vault.url>
-    <hashicorp.vault.version>1.1.2</hashicorp.vault.version>
+    <hashicorp.vault.version>1.1.3</hashicorp.vault.version>
 
     <doxia.site.renderer.version>1.9.1</doxia.site.renderer.version>
     <frontend.maven.plugin.version>1.7.6</frontend.maven.plugin.version>
