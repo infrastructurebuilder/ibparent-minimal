@@ -191,7 +191,7 @@
       <dependency>
         <groupId>org.infrastructurebuilder</groupId>
         <artifactId>maven-import-bom</artifactId>
-        <version>${maven.version}.0</version>
+        <version>${maven.version}.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
