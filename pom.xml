@@ -42,7 +42,7 @@
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
     <maven.invoker.plugin.version>3.2.0</maven.invoker.plugin.version>
-    <maven.jar.plugin.version>3.1.1</maven.jar.plugin.version>
+    <maven.jar.plugin.version>3.1.2</maven.jar.plugin.version>
     <maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
@@ -102,11 +102,6 @@
     <junit.version>4.12</junit.version>
     <license.maven.plugin>3.0</license.maven.plugin>
     <liquibase.version>3.6.3</liquibase.version>
-    <!-- Like the logging config, this can stay at an older version but get updated at some cadence -->
-    <packer.maven.plugin.version>0.9.0</packer.maven.plugin.version>
-    <!-- TODO Fix redline
-    <redline.maven.plugin.version>UNKNOWN</redline.maven.plugin.version>
-     -->
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
 
   </properties>
@@ -477,20 +472,6 @@
             </mapping>
           </configuration>
         </plugin>
-        <plugin>
-          <groupId>org.infrastructurebuilder.packer</groupId>
-          <artifactId>packer-maven-plugin</artifactId>
-          <version>${packer.maven.plugin.version}</version>
-          <extensions>true</extensions>
-          <configuration>
-            <overwrite>true</overwrite>
-            <baseTags>
-              <Produced-By>${project.groupId}:${project.artifactId}:${project.version}:${project.packaging}</Produced-By>
-            </baseTags>
-          </configuration>
-        </plugin>
-
-
       </plugins>
     </pluginManagement>
     <resources>
