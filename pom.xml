@@ -36,12 +36,12 @@
     <maven.dependency.plugin.version>3.1.1</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
     <maven.download.plugin.version>1.4.2</maven.download.plugin.version>
+    <maven.enforcer.plugin.version>3.0.0-M2</maven.enforcer.plugin.version>
+    <maven.exec.plugin.version>1.6.0</maven.exec.plugin.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
     <maven.invoker.plugin.version>3.2.0</maven.invoker.plugin.version>
-    <maven.enforcer.plugin.version>3.0.0-M2</maven.enforcer.plugin.version>
-    <maven.exec.plugin.version>1.6.0</maven.exec.plugin.version>
     <maven.jar.plugin.version>3.1.1</maven.jar.plugin.version>
     <maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
@@ -52,7 +52,6 @@
     <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
     <maven.shared.filtering.version>3.1.1</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.9</maven.site.doxia.model.version>
-    <maven.site.fluid.skin.version>1.5</maven.site.fluid.skin.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
     <maven.site.plugin.version>3.7.1</maven.site.plugin.version>
     <maven.source.plugin.version>3.1.0</maven.source.plugin.version>
@@ -191,7 +190,7 @@
       <dependency>
         <groupId>org.infrastructurebuilder</groupId>
         <artifactId>maven-import-bom</artifactId>
-        <version>${maven.version}.1</version>
+        <version>${maven.version}.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
