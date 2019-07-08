@@ -191,8 +191,8 @@
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.util</groupId>
-        <artifactId>groovy-import-pom</artifactId>
-        <version>${groovy.version}.1</version>
+        <artifactId>groovy-import-bom</artifactId>
+        <version>${groovy.version}.2</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
