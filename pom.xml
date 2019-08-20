@@ -101,7 +101,7 @@
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <junit.version>4.12</junit.version>
     <license.maven.plugin>3.0</license.maven.plugin>
-    <liquibase.version>3.7.0</liquibase.version>
+    <liquibase.version>3.8.0</liquibase.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
 
   </properties>
