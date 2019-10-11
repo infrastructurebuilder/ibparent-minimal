@@ -13,7 +13,9 @@
   <url>https://github.com/${team.name}/${project.artifactId}</url>
   <properties>
     <maven.version>3.6.2</maven.version>
+    <maven.bom.version>${maven.version}.1</maven.bom.version>
     <groovy.version>2.5.8</groovy.version>
+    <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
 
     <git.http.url>${git.scm.url}.git</git.http.url>
@@ -190,14 +192,14 @@
       <dependency>
         <groupId>org.infrastructurebuilder</groupId>
         <artifactId>maven-import-bom</artifactId>
-        <version>${maven.version}.0</version>
+        <version>${maven.bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.util</groupId>
         <artifactId>groovy-import-bom</artifactId>
-        <version>${groovy.version}.0</version>
+        <version>${groovy.bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
