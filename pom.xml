@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
 	<!-- A reasonable base group -->
@@ -58,7 +60,7 @@
     <maven.site.plugin.version>3.8.2</maven.site.plugin.version>
     <maven.source.plugin.version>3.2.0</maven.source.plugin.version>
     <maven.versions.plugin.version>2.7</maven.versions.plugin.version>
-    <maven.wagon.version>3.3.3</maven.wagon.version>
+    <maven.wagon.version>3.3.4</maven.wagon.version>
 
 
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
@@ -92,11 +94,11 @@
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
     <hashicorp.packer.version>1.4.5</hashicorp.packer.version>
     <!--  -->
-    <hashicorp.terraform.sha1.darwin>fc73d7a728ee2e8a88068f9dd8391f828712b52d</hashicorp.terraform.sha1.darwin>
-    <hashicorp.terraform.sha1.linux>2e595032e5669fa21a8dcced87b1e76a90d0e854</hashicorp.terraform.sha1.linux>
-    <hashicorp.terraform.sha1.windows>783dc82918636e22e27399fc18aade9668a9648b</hashicorp.terraform.sha1.windows>
+    <hashicorp.terraform.sha1.darwin>1d9de8508a414991572b291eae8b6b1fb7c19f59</hashicorp.terraform.sha1.darwin>
+    <hashicorp.terraform.sha1.linux>c466500d3dc274c6fc0117e8d523afced1af2db1</hashicorp.terraform.sha1.linux>
+    <hashicorp.terraform.sha1.windows>f9d5351f9fcce1c2e26dbb7c81d5bced350d9a81</hashicorp.terraform.sha1.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
-    <hashicorp.terraform.version>0.12.12</hashicorp.terraform.version>
+    <hashicorp.terraform.version>0.12.13</hashicorp.terraform.version>
     <!--  -->
     <hashicorp.vault.sha1.darwin>e21b492aa05940d10053b95c3ecf6e29b08fa283</hashicorp.vault.sha1.darwin>
     <hashicorp.vault.sha1.linux>d00467f6fbb92bcf77b26f9476fdd79cd5d70580</hashicorp.vault.sha1.linux>
@@ -105,11 +107,12 @@
     <hashicorp.vault.version>1.2.3</hashicorp.vault.version>
     <!--  -->
 
+    <dbunit.version>2.6.0</dbunit.version>
     <doxia.site.renderer.version>1.9.1</doxia.site.renderer.version>
     <frontend.maven.plugin.version>1.8.0</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
-    <junit.version>4.12</junit.version>
-    <junit.jupiter.version>5.5.2</junit.jupiter.version>
+    <junit.version>4.13-rc-1</junit.version>
+    <junit.jupiter.version>5.6.0-M1</junit.jupiter.version>
     <license.maven.plugin>3.0</license.maven.plugin>
     <liquibase.version>3.8.1</liquibase.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
@@ -211,6 +214,11 @@
         <version>${maven.shared.filtering.version}</version>
       </dependency>
       <dependency>
+        <groupId>org.dbunit</groupId>
+        <artifactId>dbunit</artifactId>
+        <version>${dbunit.version}</version>
+      </dependency>
+      <dependency>
         <groupId>org.infrastructurebuilder</groupId>
         <artifactId>maven-import-bom</artifactId>
         <version>${maven.bom.version}</version>
@@ -229,6 +237,7 @@
         <artifactId>liquibase-core</artifactId>
         <version>${liquibase.version}</version>
       </dependency>
+
     </dependencies>
   </dependencyManagement>
   <build>
