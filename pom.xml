@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -487,6 +486,12 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>tidy-maven-plugin</artifactId>
           <version>${tidy.pom.maven.plugin.version}</version>
+          <configuration>
+            <!--  FIXME Skipping until https://github.com/mojohaus/tidy-maven-plugin/issues/7 -->
+            <skip>true</skip>
+            <indentSize>2</indentSize>
+            <lineLength>132</lineLength>
+          </configuration>
           <executions>
             <execution>
               <id>validate</id>
