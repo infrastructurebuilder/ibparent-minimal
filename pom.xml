@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
 	<!-- A reasonable base group -->
@@ -124,6 +126,12 @@
     <spotify.docker.maven.plugin.version>1.2.1</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.1.0</tidy.pom.maven.plugin.version>
+
+    <!-- Reformatting config -->
+    <line.length>132</line.length>
+    <indent.size>2</indent.size>
+    <!-- Configuration of flatten plugin -->
+    <flatten.mode>ossrh</flatten.mode> <!--  See https://www.mojohaus.org/flatten-maven-plugin/flatten-mojo.html#flattenMode -->
   </properties>
 
   <organization>
@@ -459,9 +467,9 @@
           <artifactId>flatten-maven-plugin</artifactId>
           <version>${flatten.maven.plugin.version}</version>
           <configuration>
-            <flattenMode>oss</flattenMode>
-            <indentSize>2</indentSize>
-            <lineLength>132</lineLength>
+            <flattenMode>ossrh</flattenMode>
+            <indentSize>${indent.size}</indentSize>
+            <lineLength>${line.length}</lineLength>
           </configuration>
         </plugin>
 
@@ -487,8 +495,8 @@
           <configuration>
             <!--  FIXME Skipping until https://github.com/mojohaus/tidy-maven-plugin/issues/7 -->
             <skip>true</skip>
-            <indentSize>2</indentSize>
-            <lineLength>132</lineLength>
+            <indentSize>${indent.size}</indentSize>
+            <lineLength>${line.length}</lineLength>
           </configuration>
           <executions>
             <execution>
