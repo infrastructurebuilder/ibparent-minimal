@@ -120,7 +120,7 @@
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
     <liquibase.version>3.8.1</liquibase.version>
     <mycila.license.maven.plugin>3.0</mycila.license.maven.plugin>
-    <ounce.maven.plugin.version>1.6.0</ounce.maven.plugin.version>
+    <ounce.maven.plugin.version>1.3</ounce.maven.plugin.version>
     <sonar.maven.plugin.version>3.7.0.1746</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.6.26</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.1</spotify.docker.maven.plugin.version>
@@ -470,7 +470,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>license-maven-plugin</artifactId>
-          <version>${licenses.maven.plugin.version}</version>
+          <version>${license.maven.plugin.version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
