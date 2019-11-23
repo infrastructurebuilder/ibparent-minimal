@@ -63,6 +63,8 @@
     <maven.wagon.version>3.3.4</maven.wagon.version>
 
 
+    <ib.license.email>admin@infrastructurebuilder.org</ib.license.email>
+    <ib.license.name>admin</ib.license.name>
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
     <ib.site.repo>repository/sites</ib.site.repo>
     <ib.site.root>${ib.site.scheme}://${ib.site.server}/${ib.site.repo}</ib.site.root>
@@ -71,8 +73,6 @@
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
     <ib.versioning.support.plugin.version>0.11.0</ib.versioning.support.plugin.version>
-    <ib.license.email>admin@infrastructurebuilder.org</ib.license.email>
-    <ib.license.name>admin</ib.license.name>
 
     <hashicorp.consul.sha1.darwin>776f494aeb3f93ba9907acf3e892ef2b2c2a59d2</hashicorp.consul.sha1.darwin>
     <hashicorp.consul.sha1.linux>dfe61eda45724774f22b4daee00edf47e9fbb7f0</hashicorp.consul.sha1.linux>
