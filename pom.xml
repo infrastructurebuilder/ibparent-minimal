@@ -49,6 +49,7 @@
     <maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
+    <maven.pdf.plugin.version>1.4</maven.pdf.plugin.version>
     <maven.project.info.plugin.version>3.0.0</maven.project.info.plugin.version>
     <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
     <maven.remote.resources.version>1.6.0</maven.remote.resources.version>
@@ -359,6 +360,10 @@
               <projectNameString>OVERRIDE_PROJECT_NAME</projectNameString>
             </filterProperties>
           </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-pdf-plugin</artifactId>
+          <version>${maven.pdf.plugin.version}</version>
         </plugin>
         <plugin>
           <artifactId>maven-remote-resources-plugin</artifactId>
@@ -735,6 +740,49 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>tidy-maven-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>pdf</id>
+      <reporting>
+        <plugins>
+          <plugin>
+            <artifactId>maven-project-info-reports-plugin</artifactId>
+            <version>${maven.project.info.plugin.version}</version>
+            <reportSets>
+              <reportSet>
+                <reports>
+                  <report>cim</report>
+                  <!-- take too long time
+                  <report>dependencies</report> -->
+                  <report>dependency-convergence</report>
+                  <report>dependency-management</report>
+                  <!-- already present
+                  <report>index</report> -->
+                  <report>issue-tracking</report>
+                  <report>license</report>
+                  <report>mailing-list</report>
+                  <report>plugin-management</report>
+                  <report>plugins</report>
+                  <report>project-team</report>
+                  <report>scm</report>
+                  <report>summary</report>
+                </reports>
+              </reportSet>
+            </reportSets>
+          </plugin>
+        </plugins>
+      </reporting>
+
+      <build>
+        <defaultGoal>pdf:pdf</defaultGoal>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-pdf-plugin</artifactId>
+            <version>${maven.pdf.plugin.version}</version>
           </plugin>
         </plugins>
       </build>
