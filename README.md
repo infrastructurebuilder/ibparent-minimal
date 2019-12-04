@@ -17,6 +17,22 @@ when this POM was released).  If you want, you can override `${enforcer.maven.ve
 with a `-Denforcer.maven.version=3.3.3` or whatever, but it is not guaranteed
 that other parts of IB will work with that version.
 
+## `.gitignore`
+
+Please ensure your Maven builds have a good `.gitignore`
+
+This is the IB "standard" (which we really need to propagate through the system)
+
+```
+.*
+!.gitignore
+target
+*.iml
+pom.xml.*
+release.properties
+/bin
+```
+
 #  IMPORTANT
 
 To release within this tree, you must have a profile called `gpgsigning` in your `settings.xml`
