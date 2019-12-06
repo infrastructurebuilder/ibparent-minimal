@@ -13,11 +13,11 @@
   <inceptionYear>2019</inceptionYear>
   <url>https://github.com/${team.name}/${project.artifactId}</url>
   <properties>
-    <maven.version>3.6.2</maven.version>
+    <maven.version>3.6.3</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.3</maven.bom.version>
+    <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
     <groovy.version>2.5.8</groovy.version>
-    <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
+    <groovy.bom.version>${groovy.version}.2</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
 
     <git.http.url>${git.scm.url}.git</git.http.url>
