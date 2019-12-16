@@ -3,7 +3,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-	<!-- A reasonable base group -->
+  <!-- A reasonable base group -->
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>ibparent-minimal</artifactId>
   <version>19-SNAPSHOT</version>
@@ -81,7 +81,7 @@
     <hashicorp.consul.sha1.windows>9b3401059a9b6fe14d5b237f4d5e2e7043a07058</hashicorp.consul.sha1.windows>
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
     <hashicorp.consul.version>1.6.2</hashicorp.consul.version>
-    <!--  -->
+    <!-- -->
 
     <hashicorp.nomad.sha1.darwin>7392bb7f7fb010ab4bf4c795e57df776e191cf98</hashicorp.nomad.sha1.darwin>
     <hashicorp.nomad.sha1.linux>daa2ba4cb61b5f5f39a49343ec2731e0e7257380</hashicorp.nomad.sha1.linux>
@@ -89,25 +89,25 @@
     <hashicorp.nomad.url>https://releases.hashicorp.com/nomad/${hashicorp.nomad.version}/nomad_${hashicorp.nomad.version}_${hashicorp.os}_amd64.zip</hashicorp.nomad.url>
     <hashicorp.nomad.version>0.10.1</hashicorp.nomad.version>
 
-    <!--  -->
+    <!-- -->
     <hashicorp.packer.sha1.darwin>552960d75443b34ee0a49e84913b2fe8ebe6ad56</hashicorp.packer.sha1.darwin>
     <hashicorp.packer.sha1.linux>a2c4c655fa302da39738ed1d4588d6a338258f60</hashicorp.packer.sha1.linux>
     <hashicorp.packer.sha1.windows>f447fee0641a4854514cb6cfabc0fda68d094926</hashicorp.packer.sha1.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
     <hashicorp.packer.version>1.4.5</hashicorp.packer.version>
-    <!--  -->
+    <!-- -->
     <hashicorp.terraform.sha1.darwin>b8c76065164ecdd68eaf0c900be32cd049c9c946</hashicorp.terraform.sha1.darwin>
     <hashicorp.terraform.sha1.linux>b2f5bea328813635f47d63124e6105d333a5f149</hashicorp.terraform.sha1.linux>
     <hashicorp.terraform.sha1.windows>9d322ae965d6e982cd26030fa8ca213146a05274</hashicorp.terraform.sha1.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
     <hashicorp.terraform.version>0.12.15</hashicorp.terraform.version>
-    <!--  -->
+    <!-- -->
     <hashicorp.vault.sha1.darwin>50f72fd317b9d2e348286b943b98761f999e756b</hashicorp.vault.sha1.darwin>
     <hashicorp.vault.sha1.linux>c87a90bd2fdb0d91f37f035a297e293550aced6d</hashicorp.vault.sha1.linux>
     <hashicorp.vault.sha1.windows>5bea15b1d1fda2b7524b2ed08773590a03e5291e</hashicorp.vault.sha1.windows>
     <hashicorp.vault.url>https://releases.hashicorp.com/vault/${hashicorp.vault.version}/vault_${hashicorp.vault.version}_${hashicorp.os}_amd64.zip</hashicorp.vault.url>
     <hashicorp.vault.version>1.3.0</hashicorp.vault.version>
-    <!--  -->
+    <!-- -->
 
     <alex.nederlof.jasperreports.plugin.version>2.6</alex.nederlof.jasperreports.plugin.version>
     <animal.sniffer.maven.plugin.version>1.18</animal.sniffer.maven.plugin.version>
@@ -118,6 +118,8 @@
     <flatten.maven.plugin.version>1.1.0</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.8.0</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
+    <google.protoc.version>3.11.2</google.protoc.version>
+    <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
     <junit.jupiter.version>5.6.0-M1</junit.jupiter.version>
     <junit.version>4.13-rc-2</junit.version>
     <kr.motd.maven.plugin.version>1.6.2</kr.motd.maven.plugin.version>
@@ -126,6 +128,8 @@
     <mycila.license.maven.plugin>3.0</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.10.1</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.3</ounce.maven.plugin.version>
+
+    <protobuf.version>3.11.2</protobuf.version>
     <sonar.maven.plugin.version>3.7.0.1746</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.6.27</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.1</spotify.docker.maven.plugin.version>
@@ -138,7 +142,7 @@
     <line.length>132</line.length>
     <indent.size>2</indent.size>
     <!-- Configuration of flatten plugin -->
-    <flatten.mode>ossrh</flatten.mode> <!--  See https://www.mojohaus.org/flatten-maven-plugin/flatten-mojo.html#flattenMode -->
+    <flatten.mode>ossrh</flatten.mode> <!-- See https://www.mojohaus.org/flatten-maven-plugin/flatten-mojo.html#flattenMode -->
   </properties>
 
   <organization>
@@ -302,6 +306,13 @@
           <artifactId>protoc-jar-maven-plugin</artifactId>
           <version>${os72.protoc.maven.plugin.version}</version>
           <!-- See http://os72.github.io/protoc-jar-maven-plugin/index.html -->
+          <configuration>
+            <protocArtifact>com.google.protobuf:protoc:${google.protoc.version}</protocArtifact>
+            <!-- this is required for using the standard protobuf types like
+              Any / Timestamp -->
+            <includeStdTypes>${google.protoc.includeStdTypes}</includeStdTypes>
+            <outputDirectory>target/generated-sources/protobuf</outputDirectory>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>com.spotify</groupId>
@@ -317,13 +328,9 @@
           <artifactId>maven-assembly-plugin</artifactId>
           <version>${maven.assembly.plugin.version}</version>
         </plugin>
-        <!-- TODO Fix Redline
-        <plugin>
-          <groupId>org.infrastructurebuilder</groupId>
-          <artifactId>redline-maven-plugin</artifactId>
-          <version>${redline.maven.plugin.version}</version>
-        </plugin>
-         -->
+        <!-- TODO Fix Redline <plugin> <groupId>org.infrastructurebuilder</groupId>
+          <artifactId>redline-maven-plugin</artifactId> <version>${redline.maven.plugin.version}</version>
+          </plugin> -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>${maven.clean.plugin.version}</version>
@@ -517,7 +524,7 @@
           <artifactId>tidy-maven-plugin</artifactId>
           <version>${tidy.pom.maven.plugin.version}</version>
           <configuration>
-            <!--  FIXME Skipping until https://github.com/mojohaus/tidy-maven-plugin/issues/7 -->
+            <!-- FIXME Skipping until https://github.com/mojohaus/tidy-maven-plugin/issues/7 -->
             <skip>true</skip>
             <indentSize>${indent.size}</indentSize>
             <lineLength>${line.length}</lineLength>
@@ -643,7 +650,7 @@
           <groupId>kr.motd.maven</groupId>
           <artifactId>os-maven-plugin</artifactId>
           <version>${kr.motd.maven.plugin.version}</version>
-          <!--  See https://github.com/trustin/os-maven-plugin -->
+          <!-- See https://github.com/trustin/os-maven-plugin -->
         </plugin>
       </plugins>
     </pluginManagement>
@@ -786,12 +793,10 @@
               <reportSet>
                 <reports>
                   <report>cim</report>
-                  <!-- take too long time
-                  <report>dependencies</report> -->
+                  <!-- take too long time <report>dependencies</report> -->
                   <report>dependency-convergence</report>
                   <report>dependency-management</report>
-                  <!-- already present
-                  <report>index</report> -->
+                  <!-- already present <report>index</report> -->
                   <report>issue-tracking</report>
                   <report>license</report>
                   <report>mailing-list</report>
