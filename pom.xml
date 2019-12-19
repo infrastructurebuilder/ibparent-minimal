@@ -72,7 +72,7 @@
     <ib.site.server>github.com</ib.site.server>
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.13.0-SNAPSHOT</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.13.0</ib.versioning.support.plugin.version>
 
     <hashicorp.consul.sha1.darwin>776f494aeb3f93ba9907acf3e892ef2b2c2a59d2</hashicorp.consul.sha1.darwin>
     <hashicorp.consul.sha1.linux>dfe61eda45724774f22b4daee00edf47e9fbb7f0</hashicorp.consul.sha1.linux>
