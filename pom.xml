@@ -15,7 +15,7 @@
   <properties>
     <maven.version>3.6.3</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.0</maven.bom.version>
+    <maven.bom.version>${maven.version}.1</maven.bom.version>
     <groovy.version>2.5.8</groovy.version>
     <groovy.bom.version>${groovy.version}.2</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
@@ -74,7 +74,7 @@
     <ib.site.server>github.com</ib.site.server>
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.12.0</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.13.0-SNAPSHOT</ib.versioning.support.plugin.version>
 
     <hashicorp.consul.sha1.darwin>776f494aeb3f93ba9907acf3e892ef2b2c2a59d2</hashicorp.consul.sha1.darwin>
     <hashicorp.consul.sha1.linux>dfe61eda45724774f22b4daee00edf47e9fbb7f0</hashicorp.consul.sha1.linux>
@@ -124,7 +124,7 @@
     <junit.version>4.13-rc-2</junit.version>
     <kr.motd.maven.plugin.version>1.6.2</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>3.8.2</liquibase.version>
+    <liquibase.version>3.8.3</liquibase.version>
     <mycila.license.maven.plugin>3.0</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.1</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.3</ounce.maven.plugin.version>
