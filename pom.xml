@@ -58,7 +58,7 @@
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
     <maven.site.plugin.version>3.8.2</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
-    <maven.source.plugin.version>3.2.0</maven.source.plugin.version>
+    <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
     <maven.versions.plugin.version>2.7</maven.versions.plugin.version>
     <maven.wagon.version>3.3.4</maven.wagon.version>
 
@@ -88,11 +88,11 @@
     <hashicorp.nomad.version>0.10.2</hashicorp.nomad.version>
 
     <!-- -->
-    <hashicorp.packer.sha1.darwin>f09582eecf01ef3f2337c1610b2e33cc893795e5</hashicorp.packer.sha1.darwin>
-    <hashicorp.packer.sha1.linux>b4a2fa6450ba2607cc5c245068805b2be3cf7fc9</hashicorp.packer.sha1.linux>
-    <hashicorp.packer.sha1.windows>bd89d35e2bcdc64f6b1b159e99fd017173f095dc</hashicorp.packer.sha1.windows>
+    <hashicorp.packer.sha1.darwin>2926a16035a4b1d9f378241f8145f9492828809b</hashicorp.packer.sha1.darwin>
+    <hashicorp.packer.sha1.linux>6710cc36fcecd2445973b287cf7939178a71c129</hashicorp.packer.sha1.linux>
+    <hashicorp.packer.sha1.windows>9c19525bc847555d282473b63b1d17060c4d4cdc</hashicorp.packer.sha1.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
-    <hashicorp.packer.version>1.5.0</hashicorp.packer.version>
+    <hashicorp.packer.version>1.5.1</hashicorp.packer.version>
     <!-- -->
     <hashicorp.terraform.sha1.darwin>c2718da618c0691318b9de226d06addf58eeb0d0</hashicorp.terraform.sha1.darwin>
     <hashicorp.terraform.sha1.linux>7fc373ff01717e39304e7ee751af31226b21eba8</hashicorp.terraform.sha1.linux>
@@ -122,7 +122,7 @@
     <junit.version>4.13-rc-2</junit.version>
     <kr.motd.maven.plugin.version>1.6.2</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>3.8.3</liquibase.version>
+    <liquibase.version>3.8.4</liquibase.version>
     <mycila.license.maven.plugin>3.0</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.1</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.3</ounce.maven.plugin.version>
