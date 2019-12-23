@@ -129,7 +129,7 @@
 
     <protobuf.version>3.11.2</protobuf.version>
     <sonar.maven.plugin.version>3.7.0.1746</sonar.maven.plugin.version>
-    <spf4j.jdiff.maven.plugin.version>8.6.29</spf4j.jdiff.maven.plugin.version>
+    <spf4j.jdiff.maven.plugin.version>8.6.30</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.1</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.1.0</tidy.pom.maven.plugin.version>
