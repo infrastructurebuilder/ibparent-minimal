@@ -54,7 +54,7 @@
     <maven.remote.resources.version>1.7.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
     <maven.shared.filtering.version>3.1.1</maven.shared.filtering.version>
-    <maven.site.doxia.model.version>1.9</maven.site.doxia.model.version>
+    <maven.site.doxia.model.version>1.9.1</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
     <maven.site.plugin.version>3.8.2</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
@@ -129,7 +129,7 @@
 
     <protobuf.version>3.11.2</protobuf.version>
     <sonar.maven.plugin.version>3.7.0.1746</sonar.maven.plugin.version>
-    <spf4j.jdiff.maven.plugin.version>8.7.4</spf4j.jdiff.maven.plugin.version>
+    <spf4j.jdiff.maven.plugin.version>8.7.5</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.1.0</tidy.pom.maven.plugin.version>
