@@ -1,4 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
   <modelVersion>4.0.0</modelVersion>
 
   <!-- A reasonable base group -->
@@ -119,7 +123,7 @@
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
-    <junit.jupiter.version>5.6.1</junit.jupiter.version>
+    <junit.jupiter.version>5.6.2</junit.jupiter.version>
     <junit.version>4.13</junit.version>
     <kr.motd.maven.plugin.version>1.6.2</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
@@ -560,6 +564,11 @@
           <groupId>org.kuali.maven.plugins</groupId>
           <artifactId>graph-maven-plugin</artifactId>
           <version>${maven.graph.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.liquibase</groupId>
+          <artifactId>liquibase-maven-plugin</artifactId>
+          <version>${liquibase.version}</version>
         </plugin>
         <plugin>
           <groupId>org.sonatype.plugins</groupId>
