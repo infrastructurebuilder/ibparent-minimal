@@ -37,9 +37,9 @@
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     <maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <maven.download.plugin.version>1.5.1</maven.download.plugin.version> <!-- Use Caution when updating -->
+    <maven.download.plugin.version>1.6.0</maven.download.plugin.version> <!-- Use Caution when updating -->
     <maven.enforcer.plugin.version>3.0.0-M3</maven.enforcer.plugin.version>
-    <maven.exec.plugin.version>1.6.0</maven.exec.plugin.version>
+    <maven.exec.plugin.version>3.0.0</maven.exec.plugin.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
@@ -49,7 +49,7 @@
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
     <maven.pdf.plugin.version>1.4</maven.pdf.plugin.version>
-    <maven.project.info.plugin.version>3.0.0</maven.project.info.plugin.version>
+    <maven.project.info.plugin.version>3.1.0</maven.project.info.plugin.version>
     <maven.release.plugin.version>3.0.0-M1</maven.release.plugin.version>
     <maven.remote.resources.version>1.7.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.1.0</maven.resources.plugin.version>
@@ -137,7 +137,7 @@
 
     <protobuf.version>3.11.2</protobuf.version>
     <sonar.maven.plugin.version>3.7.0.1746</sonar.maven.plugin.version>
-    <spf4j.jdiff.maven.plugin.version>8.8.1</spf4j.jdiff.maven.plugin.version>
+    <spf4j.jdiff.maven.plugin.version>8.8.3</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.1.0</tidy.pom.maven.plugin.version>
