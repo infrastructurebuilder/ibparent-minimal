@@ -101,6 +101,14 @@
     <hashicorp.packer.download.skip>true</hashicorp.packer.download.skip>
 
     <!-- -->
+    <hashicorp.sentinel.sha512.darwin>3e4966f0aebac375a285d971632d41bc0d7600b8889f94226838e375c05c2937e88b3af6b7bf64bb535590fc0ff972f40eb2040523e547f0014e4645d8d0c4dc</hashicorp.sentinel.sha512.darwin>
+    <hashicorp.sentinel.sha512.linux>d314b85aa9cedf257409a19efcabc0c774a39b30c1b86173bd5b37a6c22171996134019b147e004bc10bc4c642a8bbc98ef9061a477736040907f9f71e5d9e4a</hashicorp.sentinel.sha512.linux>
+    <hashicorp.sentinel.sha512.windows>a85c902b99e64d61b2ddb15c966614938c93f8f30432f091cca9bbc92cc2a222b247fd5ec6c4360b5be05a5e8d4264fd9df6dc7232d58844566a52957c085154</hashicorp.sentinel.sha512.windows>
+    <hashicorp.sentinel.url>https://releases.hashicorp.com/sentinel/${hashicorp.sentinel.version}/sentinel_${hashicorp.sentinel.version}_${hashicorp.os}_amd64.zip</hashicorp.sentinel.url>
+    <hashicorp.sentinel.version>0.15.6</hashicorp.sentinel.version>
+    <hashicorp.sentinel.download.skip>true</hashicorp.sentinel.download.skip>
+
+    <!-- -->
     <hashicorp.terraform.sha512.darwin>c0bf265555094c8cca714f10c29784e27cc80869de76bc4540953b67ca98fd83005d4132e034636776bf255f8d9a2f49dd2af3bbba3382f3fbc515d59c8981d3</hashicorp.terraform.sha512.darwin>
     <hashicorp.terraform.sha512.linux>5c574f3ec699ca240ed4dde8238ea6f2098edd844237f89658163acfc625f58560316068165ec1523e02a18a21948f33fde6c0d95aca1b140397265c7e9c2fb6</hashicorp.terraform.sha512.linux>
     <hashicorp.terraform.sha512.windows>28f9bd7ada1d201841d925feb081cf237089c403973907cea92022a3b1a6ab3b136c5c2acd5dc5d86fc87ec8a376966d0aeeef4434dedda663a9980fd4585d10</hashicorp.terraform.sha512.windows>
@@ -115,6 +123,16 @@
     <hashicorp.vault.url>https://releases.hashicorp.com/vault/${hashicorp.vault.version}/vault_${hashicorp.vault.version}_${hashicorp.os}_amd64.zip</hashicorp.vault.url>
     <hashicorp.vault.version>1.4.2</hashicorp.vault.version>
     <hashicorp.vault.download.skip>true</hashicorp.vault.download.skip>
+    <!-- -->
+
+    <!-- -->
+    <!--  Vagrant has installers for Windows and Mac.  IB setup can't really drive those installations -->
+<!-- <hashicorp.vagrant.sha512.darwin>7f4e441b07c71bb6a896e778a7abe7db6027fe32a6d493c37cba98054e203c1949c7d69e47e506aaeb154c8b2cc7cfa4a2eee6201097abf59f9fa080d251b1e3</hashicorp.vagrant.sha512.darwin> -->
+    <hashicorp.vagrant.sha512.linux>a66778a48dfa4329ac8815b4b5cd7ef5d61e6b448a84f9cbe2c06573573e1f56129578e8d43ff7ad9e424b5c4f3d0ccd335de9ccc6b683a122f75e8b8d1cf0b4</hashicorp.vagrant.sha512.linux>
+<!-- <hashicorp.vagrant.sha512.windows>7c6feedffdb8cd711e9f54cda39eb4e89f6ea88ba12c627459a699749e15ffcaaacf8d4f4ef465c8d27ff179ef77e8328d2be2dcf84b880546160683928d9c85</hashicorp.vagrant.sha512.windows> -->
+    <hashicorp.vagrant.url>https://releases.hashicorp.com/vagrant/${hashicorp.vagrant.version}/vagrant_${hashicorp.vagrant.version}_${hashicorp.os}_amd64.zip</hashicorp.vagrant.url>
+    <hashicorp.vagrant.version>2.2.9</hashicorp.vagrant.version>
+    <hashicorp.vagrant.download.skip>true</hashicorp.vagrant.download.skip>
     <!-- -->
 
     <alex.nederlof.jasperreports.plugin.version>2.7</alex.nederlof.jasperreports.plugin.version>
@@ -761,6 +779,20 @@
             </configuration>
           </execution>
           <execution>
+            <id>getsentinel</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>wget</goal>
+            </goals>
+            <configuration>
+              <skip>${hashicorp.sentinel.download.skip}</skip>
+              <unpack>true</unpack>
+              <checkSignature>true</checkSignature>
+              <url>${hashicorp.sentinel.url}</url>
+              <sha512>${hashicorp.sentinel.download.sha512}</sha512>
+            </configuration>
+          </execution>
+          <execution>
             <id>getterraform</id>
             <phase>validate</phase>
             <goals>
@@ -786,6 +818,20 @@
               <checkSignature>true</checkSignature>
               <url>${hashicorp.vault.url}</url>
               <sha512>${hashicorp.vault.download.sha512}</sha512>
+            </configuration>
+          </execution>
+          <execution>
+            <id>getvagrant</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>wget</goal>
+            </goals>
+            <configuration>
+              <skip>${hashicorp.vagrant.download.skip}</skip>
+              <unpack>true</unpack>
+              <checkSignature>true</checkSignature>
+              <url>${hashicorp.vagrant.url}</url>
+              <sha512>${hashicorp.vagrant.download.sha512}</sha512>
             </configuration>
           </execution>
         </executions>
@@ -833,6 +879,7 @@
         <hashicorp.consul.download.sha512>${hashicorp.consul.sha512.darwin}</hashicorp.consul.download.sha512>
         <hashicorp.nomad.download.sha512>${hashicorp.nomad.sha512.darwin}</hashicorp.nomad.download.sha512>
         <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.darwin}</hashicorp.packer.download.sha512>
+        <hashicorp.sentinel.download.sha512>${hashicorp.sentinel.sha512.darwin}</hashicorp.sentinel.download.sha512>
         <hashicorp.terraform.download.sha512>${hashicorp.terraform.sha512.darwin}</hashicorp.terraform.download.sha512>
         <hashicorp.vault.download.sha512>${hashicorp.vault.sha512.darwin}</hashicorp.vault.download.sha512>
       </properties>
@@ -848,10 +895,12 @@
       <properties>
         <hashicorp.os>linux</hashicorp.os>
         <hashicorp.consul.download.sha512>${hashicorp.consul.sha512.linux}</hashicorp.consul.download.sha512>
-        <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.linux}</hashicorp.packer.download.sha512>
         <hashicorp.nomad.download.sha512>${hashicorp.nomad.sha512.linux}</hashicorp.nomad.download.sha512>
+        <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.linux}</hashicorp.packer.download.sha512>
+        <hashicorp.sentinel.download.sha512>${hashicorp.sentinel.sha512.linux}</hashicorp.sentinel.download.sha512>
         <hashicorp.terraform.download.sha512>${hashicorp.terraform.sha512.linux}</hashicorp.terraform.download.sha512>
         <hashicorp.vault.download.sha512>${hashicorp.vault.sha512.linux}</hashicorp.vault.download.sha512>
+        <hashicorp.vagrant.download.sha512>${hashicorp.vagrant.sha512.linux}</hashicorp.vagrant.download.sha512>
       </properties>
     </profile>
     <profile>
@@ -866,6 +915,7 @@
         <hashicorp.consul.download.sha512>${hashicorp.consul.sha512.windows}</hashicorp.consul.download.sha512>
         <hashicorp.nomad.download.sha512>${hashicorp.nomad.sha512.windows}</hashicorp.nomad.download.sha512>
         <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.windows}</hashicorp.packer.download.sha512>
+        <hashicorp.sentinel.download.sha512>${hashicorp.sentinel.sha512.windows}</hashicorp.sentinel.download.sha512>
         <hashicorp.terraform.download.sha512>${hashicorp.terraform.sha512.windows}</hashicorp.terraform.download.sha512>
         <hashicorp.vault.download.sha512>${hashicorp.vault.sha512.windows}</hashicorp.vault.download.sha512>
       </properties>
