@@ -142,7 +142,7 @@
     <doxia.site.renderer.version>1.9.2</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.33.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
-    <flatten.maven.plugin.version>1.2.4</flatten.maven.plugin.version>
+    <flatten.maven.plugin.version>1.2.5</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.10.1</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
