@@ -13,8 +13,8 @@
   <properties>
     <maven.version>3.6.3</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.2</maven.bom.version>
-    <groovy.version>2.5.11</groovy.version>
+    <maven.bom.version>${maven.version}.3</maven.bom.version>
+    <groovy.version>2.5.14</groovy.version>
     <groovy.bom.version>${groovy.version}.0</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
 
