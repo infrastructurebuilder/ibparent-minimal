@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <!-- A reasonable base group -->
@@ -61,6 +62,7 @@
     <maven.site.plugin.version>3.9.1</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
+    <maven.toolchains.plugin.version>3.0.0</maven.toolchains.plugin.version>
     <maven.versions.plugin.version>2.8.1</maven.versions.plugin.version>
     <maven.wagon.version>3.4.3</maven.wagon.version>
 
@@ -161,7 +163,7 @@
     <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
     <jsr305.version>3.0.2</jsr305.version>
-    <junit.jupiter.version>5.7.1</junit.jupiter.version>
+    <junit.bom.version>5.7.1</junit.bom.version>
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.0</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
@@ -257,18 +259,21 @@
         <version>${jsr305.version}</version>
       </dependency>
 
+<!--
+ -->
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${junit.version}</version>
-        <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>${junit.jupiter.version}</version>
-        <scope>test</scope>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>${junit.bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
+      <!--
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
@@ -281,6 +286,7 @@
         <version>${junit.jupiter.version}</version>
         <scope>test</scope>
       </dependency>
+       -->
       <dependency>
         <groupId>org.apache.maven.shared</groupId>
         <artifactId>maven-filtering</artifactId>
@@ -538,6 +544,19 @@
           <artifactId>maven-source-plugin</artifactId>
           <version>${maven.source.plugin.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-toolchains-plugin</artifactId>
+          <version>${maven.toolchains.plugin.version}</version>
+          <configuration>
+            <toolchains>
+              <jdk>
+                <version>11</version>
+              </jdk>
+            </toolchains>
+          </configuration>
+        </plugin>
+
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>animal-sniffer-maven-plugin</artifactId>
@@ -888,6 +907,17 @@
             <id>default</id>
             <goals>
               <goal>enforce</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-toolchains-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>toolchain</goal>
             </goals>
           </execution>
         </executions>
