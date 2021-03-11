@@ -46,7 +46,7 @@
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
     <maven.invoker.plugin.version>3.2.2</maven.invoker.plugin.version>
-    <maven.jar.plugin.version>3.1.2</maven.jar.plugin.version>
+    <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
     <maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
@@ -75,7 +75,7 @@
     <ib.site.server>github.com</ib.site.server>
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.15.0</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.15.1</ib.versioning.support.plugin.version>
     <!-- -->
     <hashicorp.boundary.sha512.darwin>feaf9cf3515e8707868040db5c27c0b47262c7cc6eb361cde7b8236476e1699feccda9240227a78ededfea2281ec6d9e9161e49b6c284d2fc8dc06e2af0aa525</hashicorp.boundary.sha512.darwin>
     <hashicorp.boundary.sha512.linux>eddd039a919a0193577f21517db23cf9772a4a62bf279e4dc0dd304b0fd79f33650c348aa0980a2be8f9e4b238963c8d578e490786df77e7019f58d78de95be3</hashicorp.boundary.sha512.linux>
