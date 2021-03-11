@@ -85,11 +85,11 @@
     <hashicorp.boundary.download.skip>true</hashicorp.boundary.download.skip>
 
     <!-- -->
-    <hashicorp.consul.sha512.darwin>cd6bad89ea124a4cf6ff3208e2a19b9a1d2723d37348df08d2814c292ab1caf34d20b7c783c96ade6c4eb7ecf2f187b93b1bb228448fc2a7efd3b9699c5b0052</hashicorp.consul.sha512.darwin>
-    <hashicorp.consul.sha512.linux>e1e2018315d17c9f444e52a1985c7a54bbd9bd093bb5d09fdbec40c17cbdbd6ab42f972aba041835d1dfefe41f4f125b0ec9fb33e19d0abfbee88d69595b6efc</hashicorp.consul.sha512.linux>
-    <hashicorp.consul.sha512.windows>0b1b795163918726858562ad984a4300ab35b4afeea656011fb723b5943a111955951537ac30b505b40a11ed432fbdb7b40ea4abe9ef0c6e53f8f63e7cc7fef9</hashicorp.consul.sha512.windows>
+    <hashicorp.consul.sha512.darwin>5b0984f2acd6ed8c4ea0a3a8658d592a9691e181dc41951a58063ae380bd69d4ae93d48d780bbf603d88995f18da35b570633fdd29204481abcba1bcd3bd35e2</hashicorp.consul.sha512.darwin>
+    <hashicorp.consul.sha512.linux>6482b2bd27bbfa699e3cc4129df66318f0ff1b6365f7a0993b28ed5f6548248b6183c8a3bde31ee726f5138298aed471f7c5a17e827f4142c23b1bda54a57c7f</hashicorp.consul.sha512.linux>
+    <hashicorp.consul.sha512.windows>269b92721a631e92a2a016c91099ce3b2d42a98952c85cea1846c70428a10b7d466a7d061bb04c1b5130978cfe2c97e312d7ec45a15c5666feadcd0436e76618</hashicorp.consul.sha512.windows>
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
-    <hashicorp.consul.version>1.9.3</hashicorp.consul.version>
+    <hashicorp.consul.version>1.9.4</hashicorp.consul.version>
     <hashicorp.consul.download.skip>true</hashicorp.consul.download.skip>
 
     <!-- -->
@@ -156,7 +156,7 @@
     <doxia.site.renderer.version>1.9.2</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.34.1</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
-    <flatten.maven.plugin.version>1.2.5</flatten.maven.plugin.version>
+    <flatten.maven.plugin.version>1.2.7</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.11.2</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
