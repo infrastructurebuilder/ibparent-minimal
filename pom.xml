@@ -13,8 +13,8 @@
   <properties>
     <maven.version>3.6.3</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.3</maven.bom.version>
-    <groovy.version>2.5.14</groovy.version>
+    <maven.bom.version>${maven.version}.4</maven.bom.version>
+    <groovy.version>3.0.7</groovy.version>
     <groovy.bom.version>${groovy.version}.0</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
 
@@ -76,12 +76,13 @@
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
     <ib.versioning.support.plugin.version>0.15.1</ib.versioning.support.plugin.version>
+
     <!-- -->
-    <hashicorp.boundary.sha512.darwin>feaf9cf3515e8707868040db5c27c0b47262c7cc6eb361cde7b8236476e1699feccda9240227a78ededfea2281ec6d9e9161e49b6c284d2fc8dc06e2af0aa525</hashicorp.boundary.sha512.darwin>
-    <hashicorp.boundary.sha512.linux>eddd039a919a0193577f21517db23cf9772a4a62bf279e4dc0dd304b0fd79f33650c348aa0980a2be8f9e4b238963c8d578e490786df77e7019f58d78de95be3</hashicorp.boundary.sha512.linux>
-    <hashicorp.boundary.sha512.windows>1dd3534c316a19af39dc11fe817a7579c54b9a08eb1848eac3d4df47dcd1babd3834955b49e42986b75e6053c487f254e0f3eefdeba68a6db45b27a7d8fe8d19</hashicorp.boundary.sha512.windows>
+    <hashicorp.boundary.sha512.darwin>72e87545394a020cece95aa46a51f8e6a89496a24d8d9de739696290d92873c02855a4ee74bdc0ba63f0a6b084075dd182a08d343adc2b9d977831e1405d89c5</hashicorp.boundary.sha512.darwin>
+    <hashicorp.boundary.sha512.linux>cb240837f27ab35ba71aa63202b1f5d2840c41c439f9d9f1ddcf46e93ff4132ed8fc66d2fbd9d74f359a1bb60c6ea8438484ad6d3e211b44cf1a3aeb09835bde</hashicorp.boundary.sha512.linux>
+    <hashicorp.boundary.sha512.windows>e046886e14c40cf3af0e23570f8fde6242f1d6e66f95c53119906b20b9d2a9500da263c52041faa956cbc42a610b322da3c25ef4e5884452378c9d6b7c3685e6</hashicorp.boundary.sha512.windows>
     <hashicorp.boundary.url>https://releases.hashicorp.com/boundary/${hashicorp.boundary.version}/boundary_${hashicorp.boundary.version}_${hashicorp.os}_amd64.zip</hashicorp.boundary.url>
-    <hashicorp.boundary.version>0.1.7</hashicorp.boundary.version>
+    <hashicorp.boundary.version>0.1.8</hashicorp.boundary.version>
     <hashicorp.boundary.download.skip>true</hashicorp.boundary.download.skip>
 
     <!-- -->
@@ -117,11 +118,11 @@
     <hashicorp.sentinel.download.skip>true</hashicorp.sentinel.download.skip>
 
     <!-- -->
-    <hashicorp.terraform.sha512.darwin>1601b78bae9b3c6a93b915985f8f946e68855be2815e7171299083989549695229203a6d2e1fb157d5d357e29e8479d5d393774fa7e46485a78c606cef034402</hashicorp.terraform.sha512.darwin>
-    <hashicorp.terraform.sha512.linux>fb22795e35a4d361c0bb8f4cf27cc1690b0396eefdaea3d8a4905952653c2cbb518fe671f592548808d43830512a11774a8bf6c13ca3eacde2dfc12f95454de3</hashicorp.terraform.sha512.linux>
-    <hashicorp.terraform.sha512.windows>c2a333af2e97c2cc84c7a4b658cbdb12a71d17faae2232947361070379a498a4bb30011bec70696de51a15e74f8aeb58e38e30d5b228b251594f36b1356b5292</hashicorp.terraform.sha512.windows>
+    <hashicorp.terraform.sha512.darwin>dd2125a15617adbcdc3eb680472c7f7d740a3bc1ac311f975620a5d371b9548ed728d7f4629f8c2e0bcad7a61a4dc7927b115ec154d6099745de5dd803ca0873</hashicorp.terraform.sha512.darwin>
+    <hashicorp.terraform.sha512.linux>a58f142b8a23482437b36d291d766c52104da67150303b61506302cec963631815bdc6cea622095491170b37505e127782e8faa7bbee7d311e45750b53ca01df</hashicorp.terraform.sha512.linux>
+    <hashicorp.terraform.sha512.windows>3b103a766f71cac325b0f2f549a60bcc0bbf26d2ff0cf545541a1f7a580c8a7633e9ef783018feb984b8291c916f74e1ec7741c770b9e508999e339621f8b1e8</hashicorp.terraform.sha512.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
-    <hashicorp.terraform.version>0.14.7</hashicorp.terraform.version>
+    <hashicorp.terraform.version>0.14.8</hashicorp.terraform.version>
     <hashicorp.terraform.download.skip>true</hashicorp.terraform.download.skip>
 
     <!-- -->
