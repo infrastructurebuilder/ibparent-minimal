@@ -14,7 +14,7 @@
     <gpg.signing.profiles>release,IBgpgsigning</gpg.signing.profiles>
     <maven.version>3.6.3</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.4</maven.bom.version>
+    <maven.bom.version>${maven.version}.5</maven.bom.version>
     <groovy.version>3.0.7</groovy.version>
     <groovy.bom.version>${groovy.version}.0</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
