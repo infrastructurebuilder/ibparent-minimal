@@ -49,6 +49,7 @@
     <maven.invoker.plugin.version>3.2.2</maven.invoker.plugin.version>
     <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
     <maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
+    <maven.nexus.staging.plugin.skipStaging>false</maven.nexus.staging.plugin.skipStaging>
     <maven.nexus.staging.plugin.version>1.6.8</maven.nexus.staging.plugin.version>
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
     <maven.pdf.plugin.version>1.4</maven.pdf.plugin.version>
@@ -646,6 +647,7 @@
           <artifactId>nexus-staging-maven-plugin</artifactId>
           <version>${maven.nexus.staging.plugin.version}</version>
           <configuration>
+            <skipStaging>${maven.nexus.staging.plugin.skipStaging}</skipStaging>
             <serverId>ossrh</serverId>
             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
             <autoReleaseAfterClose>true</autoReleaseAfterClose>
