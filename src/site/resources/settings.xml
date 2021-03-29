@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!--  <localRepository>${user.home}/.m2/repository</localRepository> -->
+  <servers>
+    <server>
+      <id>ossrh</id>
+      <username>mykelalvis</username>
+      <password>7NU252w4ZrJfbDBcBnRz</password>
+    </server>
+    <!-- If using a repo manager
+    <server>
+      <id>nexus</id>
+      <username>nexus_username</username>
+      <password>nexus_password</password>
+    </server>
+    -->
+  </servers>
+  <!-- This should be set if you need to target a
+  <mirrors>
+    <mirror>
+      <mirrorOf>*</mirrorOf>
+      <name>remote-repos</name>
+      <url>https://repo.maven.apache.org/maven2/</url>
+      OR
+      <url>https://my.nexus.host.com/repository/grouprepo</url>
+      <id>nexus</id>
+    </mirror>
+  </mirrors>
+  -->
+  <profiles>
+  <profile>
+      <!-- For this:
+        set property <gpg.signing.profiles>releases,MY_SIGNING_PROFILE</gpg.signing.profiles>
+      -->
+      <id>MY_SIGNING_PROFILE</id>
+      <properties>
+        <gpg.executable>gpg</gpg.executable>
+        <gpg.keyname>0xABCDEF</gpg.keyname>
+        <gpg.passphrase>SUPERSECRETPASSPHRASE</gpg.passphrase>
+      </properties>
+    </profile>
+  </profiles>
+</settings>

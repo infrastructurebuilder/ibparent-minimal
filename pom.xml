@@ -9,7 +9,7 @@
   <name>${project.artifactId}</name>
   <description>Root POM set for IB projects</description>
   <inceptionYear>2019</inceptionYear>
-  <url>https://github.com/${team.name}/${project.artifactId}</url>
+  <url>https://github.com/${team.group.id}/${project.artifactId}</url>
   <properties>
     <gpg.signing.profiles>release,IBgpgsigning</gpg.signing.profiles>
     <maven.version>3.6.3</maven.version>
@@ -17,13 +17,14 @@
     <maven.bom.version>${maven.version}.5</maven.bom.version>
     <groovy.version>3.0.7</groovy.version>
     <groovy.bom.version>${groovy.version}.0</groovy.bom.version>
-    <maven.build.timestamp.format>yyyyMMddHHmmssSSS</maven.build.timestamp.format>
+    <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
 
     <git.http.url>${git.scm.url}.git</git.http.url>
-    <git.scm.url>https://github.com/${team.group.id}/${project.artifactId}</git.scm.url>
-    <git.url>git@github.com:${team.group.id}/${project.artifactId}.git</git.url>
-    <issue.management.url>https://github.com/${team.group.id}/${project.artifactId}/issues</issue.management.url>
-    <jenkins.url>https://ci.infrastructurebuilder.com</jenkins.url>
+    <git.source.host>github.com</git.source.host>
+    <git.scm.url>https://${git.source.host}/${team.group.id}/${project.artifactId}</git.scm.url>
+    <git.url>git@${git.source.host}:${team.group.id}/${project.artifactId}.git</git.url>
+    <issue.management.url>https://${git.source.host}/${team.group.id}/${project.artifactId}/issues</issue.management.url>
+    <ci.url>https://ci.infrastructurebuilder.com</ci.url>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <site.path>org.infrastructurebuilder/ibparent-minimal/${project.version}</site.path>
     <surefire.failIfNoTests>true</surefire.failIfNoTests>
