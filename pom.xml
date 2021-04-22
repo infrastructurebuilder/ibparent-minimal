@@ -41,7 +41,7 @@
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     <maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <maven.download.plugin.version>1.6.1</maven.download.plugin.version> <!-- Use Caution when updating -->
+    <maven.download.plugin.version>1.6.2</maven.download.plugin.version> <!-- Use Caution when updating -->
     <maven.enforcer.plugin.version>3.0.0-M3</maven.enforcer.plugin.version>
     <maven.exec.plugin.version>3.0.0</maven.exec.plugin.version>
     <maven.gpg.plugin.version>1.6</maven.gpg.plugin.version>
@@ -55,7 +55,7 @@
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
     <maven.pdf.plugin.version>1.4</maven.pdf.plugin.version>
     <maven.project.info.plugin.version>3.1.1</maven.project.info.plugin.version>
-    <maven.release.plugin.version>3.0.0-M1</maven.release.plugin.version>
+    <maven.release.plugin.version>3.0.0-M4</maven.release.plugin.version>
     <maven.remote.resources.version>1.7.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
     <maven.shared.filtering.version>3.2.0</maven.shared.filtering.version>
@@ -80,20 +80,21 @@
     <ib.site.wagon.method>dav</ib.site.wagon.method>
     <ib.versioning.support.plugin.version>0.15.1</ib.versioning.support.plugin.version>
 
+
     <!-- -->
-    <hashicorp.boundary.sha512.darwin>72e87545394a020cece95aa46a51f8e6a89496a24d8d9de739696290d92873c02855a4ee74bdc0ba63f0a6b084075dd182a08d343adc2b9d977831e1405d89c5</hashicorp.boundary.sha512.darwin>
-    <hashicorp.boundary.sha512.linux>cb240837f27ab35ba71aa63202b1f5d2840c41c439f9d9f1ddcf46e93ff4132ed8fc66d2fbd9d74f359a1bb60c6ea8438484ad6d3e211b44cf1a3aeb09835bde</hashicorp.boundary.sha512.linux>
-    <hashicorp.boundary.sha512.windows>e046886e14c40cf3af0e23570f8fde6242f1d6e66f95c53119906b20b9d2a9500da263c52041faa956cbc42a610b322da3c25ef4e5884452378c9d6b7c3685e6</hashicorp.boundary.sha512.windows>
+    <hashicorp.boundary.sha512.darwin>5f395e78218f73e471bb57326dacf521f712d5f75178d0bf3783d65811d639aabdf74db7b9919a5dd460396d6da608a19a6c580322d9cd9a135072427718216c</hashicorp.boundary.sha512.darwin>
+    <hashicorp.boundary.sha512.linux>8b9297d89ac117810c74486f62db4f82a6deca90e4a42b3774ded46093eee5ee8338a62a520bf5526243774c970e460d24af8b5c993827aff695f710f6679839</hashicorp.boundary.sha512.linux>
+    <hashicorp.boundary.sha512.windows>2f96e05b26be474d7f06a779e7d7c3f0db814b0bd5bb92fbcbde5ad0d13b63249af71c785393fb11879a5b95dfefa4e9446de43951b40610c9f7f5a9f8690ad7</hashicorp.boundary.sha512.windows>
     <hashicorp.boundary.url>https://releases.hashicorp.com/boundary/${hashicorp.boundary.version}/boundary_${hashicorp.boundary.version}_${hashicorp.os}_amd64.zip</hashicorp.boundary.url>
-    <hashicorp.boundary.version>0.1.8</hashicorp.boundary.version>
+    <hashicorp.boundary.version>0.2.0</hashicorp.boundary.version>
     <hashicorp.boundary.download.skip>true</hashicorp.boundary.download.skip>
 
     <!-- -->
-    <hashicorp.consul.sha512.darwin>5b0984f2acd6ed8c4ea0a3a8658d592a9691e181dc41951a58063ae380bd69d4ae93d48d780bbf603d88995f18da35b570633fdd29204481abcba1bcd3bd35e2</hashicorp.consul.sha512.darwin>
-    <hashicorp.consul.sha512.linux>6482b2bd27bbfa699e3cc4129df66318f0ff1b6365f7a0993b28ed5f6548248b6183c8a3bde31ee726f5138298aed471f7c5a17e827f4142c23b1bda54a57c7f</hashicorp.consul.sha512.linux>
-    <hashicorp.consul.sha512.windows>269b92721a631e92a2a016c91099ce3b2d42a98952c85cea1846c70428a10b7d466a7d061bb04c1b5130978cfe2c97e312d7ec45a15c5666feadcd0436e76618</hashicorp.consul.sha512.windows>
+    <hashicorp.consul.sha512.darwin>b9464bd111c8af06e8ff460e8da488ec507927f9fc3cb9a5c3c9d86a7b00f5dd8019c966ec97ca217765cb7de13f015d61ef93864832ddc66ff40939195623a0</hashicorp.consul.sha512.darwin>
+    <hashicorp.consul.sha512.linux>46950f11bf4d4d0b734ec1a190a6c9f1135ac69282b7290242cf31d22bb594cc1f36f0c01ae0f2b5ed6d6c3e7c833ab9e9e86f2bd37429cb3b6e72de79caae97</hashicorp.consul.sha512.linux>
+    <hashicorp.consul.sha512.windows>9f473279ba52aec0fce2d056ea8c136e1ce7230b5e5cbb4739c3dd04ff43192381ef92b763f69826f936ee9b409eb2f03f3db62df87e8289a307ec77bc0b85c7</hashicorp.consul.sha512.windows>
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
-    <hashicorp.consul.version>1.9.4</hashicorp.consul.version>
+    <hashicorp.consul.version>1.9.5</hashicorp.consul.version>
     <hashicorp.consul.download.skip>true</hashicorp.consul.download.skip>
 
     <!-- -->
@@ -105,52 +106,52 @@
     <hashicorp.nomad.download.skip>true</hashicorp.nomad.download.skip>
 
     <!-- -->
-    <hashicorp.packer.sha512.darwin>a1f7aed751758e2b6e1ac1646bded3f34270b71903334462d2219cd13f925a110e3f7c7ba1c2e794d3f605a8610b4e7c86f776594b52ff4cc72b15828d032b78</hashicorp.packer.sha512.darwin>
-    <hashicorp.packer.sha512.linux>629f096afb740967e496c7aa469b2b11d853713c908e6b3c225a37c93c3f9a429de6490d3fca5107afa7db03da8191b2c5851c079de69d4bc3992af41da8ddb3</hashicorp.packer.sha512.linux>
-    <hashicorp.packer.sha512.windows>06682b7d7a34d16a5cda4fe5434e56da3d7a6eab03ad1d1b197b1d595faca6359f24e1a3e241cf5669734158ade8089a16af3c7a3dc9076086bdba57c4019bfe</hashicorp.packer.sha512.windows>
+    <hashicorp.packer.sha512.darwin>6c94d5abb0c90494bf6e0851d625324b3f3a279ea2d82be996ba42a920d3484e64182ebdca46292330cca6a7d57b7ebbd8a9fbacb514523779a1179a285d5cd2</hashicorp.packer.sha512.darwin>
+    <hashicorp.packer.sha512.linux>37c9761ffc93f16197a19f4cce2310d3b860fd643e204200c8c228dbfc08211dafad5f123cc049a3293e95da294033e497e949c5b3c11ab3c275b9fc12fde2f9</hashicorp.packer.sha512.linux>
+    <hashicorp.packer.sha512.windows>6014b6e31414f648e64087c09391ff6b3203fbcd4997d43876698f0bfdb5034c34ff231ce58a3daf23ad7b0c6f60111be3cc725b180eefc48ca88acff1fe6e2f</hashicorp.packer.sha512.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
-    <hashicorp.packer.version>1.7.0</hashicorp.packer.version>
+    <hashicorp.packer.version>1.7.2</hashicorp.packer.version>
     <hashicorp.packer.download.skip>true</hashicorp.packer.download.skip>
 
     <!-- -->
-    <hashicorp.sentinel.sha512.darwin>9f11f4a48082cfe6a885b0fb91dec6d719958d1630d87945595455c085a81e2d9be5abcce596373739498c97af34328fb55d44ae744b1b6b3baf482353e6b458</hashicorp.sentinel.sha512.darwin>
-    <hashicorp.sentinel.sha512.linux>97414fa1747b61b3cd59eb027706bdfa1b81b3db46c287aa327e146897ba59a4af44c1becd746bdb1fe6d1f4a679a1df583ee3c0401161bb9094ff24ca69ac49</hashicorp.sentinel.sha512.linux>
-    <hashicorp.sentinel.sha512.windows>9ddf5f0c3a13578f54feec25f83fcd559c63cd3fbba26128b7773df22b177a6304bcde68bee3683bf20b24bb4044986c57befd65d276440ca422412959226803</hashicorp.sentinel.sha512.windows>
+    <hashicorp.sentinel.sha512.darwin>70cfb8e5ade0bfde6fe62972101a7cb5851e6c74698daed751500322db28d0cb2974a664cea24d3706ba5896280d59ba36df97bdfcd529e080dc4335c7dc3bfa</hashicorp.sentinel.sha512.darwin>
+    <hashicorp.sentinel.sha512.linux>c302d36ece27beb2c0f931cb9b1bfba557cd509616caafc1bd0a41cee8176af62d460a75b916f6366ab04f2bcb4966f259386e7fbcc835cdb817155094c08d7b</hashicorp.sentinel.sha512.linux>
+    <hashicorp.sentinel.sha512.windows>9dc0afdf0cd18cbf74ee166fdd1e505bb0272bef32976947024b4b368ec87b8159bfd1fc44a3dd737d6d08881b2ac22464f917d01c85c95eb199d26a3c39938e</hashicorp.sentinel.sha512.windows>
     <hashicorp.sentinel.url>https://releases.hashicorp.com/sentinel/${hashicorp.sentinel.version}/sentinel_${hashicorp.sentinel.version}_${hashicorp.os}_amd64.zip</hashicorp.sentinel.url>
     <hashicorp.sentinel.version>0.17.4</hashicorp.sentinel.version>
     <hashicorp.sentinel.download.skip>true</hashicorp.sentinel.download.skip>
 
     <!-- -->
-    <hashicorp.terraform.sha512.darwin>dd2125a15617adbcdc3eb680472c7f7d740a3bc1ac311f975620a5d371b9548ed728d7f4629f8c2e0bcad7a61a4dc7927b115ec154d6099745de5dd803ca0873</hashicorp.terraform.sha512.darwin>
-    <hashicorp.terraform.sha512.linux>a58f142b8a23482437b36d291d766c52104da67150303b61506302cec963631815bdc6cea622095491170b37505e127782e8faa7bbee7d311e45750b53ca01df</hashicorp.terraform.sha512.linux>
-    <hashicorp.terraform.sha512.windows>3b103a766f71cac325b0f2f549a60bcc0bbf26d2ff0cf545541a1f7a580c8a7633e9ef783018feb984b8291c916f74e1ec7741c770b9e508999e339621f8b1e8</hashicorp.terraform.sha512.windows>
+    <hashicorp.terraform.sha512.darwin>fa904c745805dc32ba55a36f199dcf2dffc6d05770cab0d808fea8f2f9ac869668ebea94c1a5260b6d2b42b0f564ea4f8253a6eebe8feec1cb1ed99e681f89dc</hashicorp.terraform.sha512.darwin>
+    <hashicorp.terraform.sha512.linux>bbaff85c254d8a571488819014fa1682d3eb09d4d954ca8b0131669255fcfc9c61e15bb22e1af0f08fd1861b1218d522f52aeda50ce4d7dd66b926339ae9bdbe</hashicorp.terraform.sha512.linux>
+    <hashicorp.terraform.sha512.windows>37c1ff89ff9a18ffae42529e32b31d34cb5ab3c313baf0fa838de0677ff1974b9439513c5af1e26e4c90b3b2504c2b8596a1edf4d0a39aa0555a37552d3496b7</hashicorp.terraform.sha512.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
-    <hashicorp.terraform.version>0.14.8</hashicorp.terraform.version>
+    <hashicorp.terraform.version>0.15.0</hashicorp.terraform.version>
     <hashicorp.terraform.download.skip>true</hashicorp.terraform.download.skip>
 
     <!-- -->
-    <hashicorp.vault.sha512.darwin>2afe2ad79f2602c78d62bea809c61daf583e8a319816cb97ecbc0543c044b9fa9bab03e8042ed037d475f2309dc0be5839361c8afcac38e3d41191edb04c5c70</hashicorp.vault.sha512.darwin>
-    <hashicorp.vault.sha512.linux>0f2b2f6c5af27a599febaf644491e35d35e7283e92c7f1e16825bd42471b375fb4975a9a362c7a35596de6c1983d239119c1b41a3b9aeb10402b7fcfcb0c0a1f</hashicorp.vault.sha512.linux>
-    <hashicorp.vault.sha512.windows>a36d0b96ccc7b106288c1cbab2ac9a717dc34e4efeb27cdcd2d79e31e325505712f0c1379a8f90d05b2c73498da724968d261d10168c585e1f21ebf7e2560423</hashicorp.vault.sha512.windows>
+    <hashicorp.vault.sha512.darwin>382f145740eeb3e62dc73d413048de73b26601566a11d508dca6eed6f326c7a23870fab0fa996d6e8c01b9eb5b18b703dc2e8bb53cb349cb54a40d3ce61203fb</hashicorp.vault.sha512.darwin>
+    <hashicorp.vault.sha512.linux>b1448cd71c8cb3922fd916ccb56f641099124e877979e92863b7d5f093650669a8ca122c7a5ae978d9b3a2a1ad871f70f3ad0e9f1c9cc01cc9e40b80ecc9eabb</hashicorp.vault.sha512.linux>
+    <hashicorp.vault.sha512.windows>88c4a646c8b742b55836a8bc42b099b2f1402f2e979da97a982ed4d75b8fc152a8b2b2561571b988ab79337a58155813c486f9fbd58158e69553dba1216835dd</hashicorp.vault.sha512.windows>
     <hashicorp.vault.url>https://releases.hashicorp.com/vault/${hashicorp.vault.version}/vault_${hashicorp.vault.version}_${hashicorp.os}_amd64.zip</hashicorp.vault.url>
-    <hashicorp.vault.version>1.6.3</hashicorp.vault.version>
+    <hashicorp.vault.version>1.7.1</hashicorp.vault.version>
     <hashicorp.vault.download.skip>true</hashicorp.vault.download.skip>
 
     <!-- -->
     <!--  Vagrant has installers for Windows and Mac.  IB setup can't really drive those installations -->
 <!-- <hashicorp.vagrant.sha512.darwin>7f4e441b07c71bb6a896e778a7abe7db6027fe32a6d493c37cba98054e203c1949c7d69e47e506aaeb154c8b2cc7cfa4a2eee6201097abf59f9fa080d251b1e3</hashicorp.vagrant.sha512.darwin> -->
-    <hashicorp.vagrant.sha512.linux>e5440b32525c5186b0aea0654473efe85affde16e923d3c8f6b9eafdb1d869143d1f1e0251deabe7a5f1e44e423996b7ca12f006ea570cfb65229c4f20fd4ae2</hashicorp.vagrant.sha512.linux>
+    <hashicorp.vagrant.sha512.linux>6c763fecefe180e38761edf989b6302ceebd2c7821a0a57a17743172c405910149e188904a99bb5627c374b41d779ef5432a4baf2a5171e870df7ba12de19d1b</hashicorp.vagrant.sha512.linux>
 <!-- <hashicorp.vagrant.sha512.windows>7c6feedffdb8cd711e9f54cda39eb4e89f6ea88ba12c627459a699749e15ffcaaacf8d4f4ef465c8d27ff179ef77e8328d2be2dcf84b880546160683928d9c85</hashicorp.vagrant.sha512.windows> -->
     <hashicorp.vagrant.url>https://releases.hashicorp.com/vagrant/${hashicorp.vagrant.version}/vagrant_${hashicorp.vagrant.version}_${hashicorp.os}_amd64.zip</hashicorp.vagrant.url>
-    <hashicorp.vagrant.version>2.2.14</hashicorp.vagrant.version>
+    <hashicorp.vagrant.version>2.2.15</hashicorp.vagrant.version>
     <hashicorp.vagrant.download.skip>true</hashicorp.vagrant.download.skip>
 
     <!-- -->
-    <hashicorp.waypoint.sha512.darwin>480c9c73e16bc1d2e0d39feb54d6b72aca27884131f01871899196b2d7e4c5cd6f8d598a91b151dd19a73ae9f893777193879422030e5cf44cc41f12b9ec3f95</hashicorp.waypoint.sha512.darwin>
-    <hashicorp.waypoint.sha512.linux>aac0e53bcc76919d8d6383a3c63771977d9fc725b7095b9dbc27432be62924cbd6c8fdbe219c211989497a8b0a6079f719d28a583cc7283733ae57827ca02e1d</hashicorp.waypoint.sha512.linux>
-    <hashicorp.waypoint.sha512.windows>02e87f90d30d5c0b56d5f4e9fa31f3d597fa97cf0042e15f45c0c9d2f262806ab78a6f5aa0a3826792d01cb72717fc9644f4078b975599f003bc52525231ca1d</hashicorp.waypoint.sha512.windows>
+    <hashicorp.waypoint.sha512.darwin>5373cdd783bb41cdb0763b9c36b582a27bd842806d1d74b2bd0fb41111b502105eb893cc0e7d376a071a874437ad9db105f94379fbc28c37cdb9c3a6e893f920</hashicorp.waypoint.sha512.darwin>
+    <hashicorp.waypoint.sha512.linux>bee4136a617246d573639d2b5fd550d0bca4ec9475da1d4255e5122e122f4d0ec0a70a6c67846d61fbd29a2c6d086bf1618e9064199834eadb2fef6961477333</hashicorp.waypoint.sha512.linux>
+    <hashicorp.waypoint.sha512.windows>f05777ceac5683aa581334e400fb0008deea2b960bd84ed6890f4b42ba879089c637794339a0bd5416425942ded2db55e5699647a3ea797d395a90512ab9cce1</hashicorp.waypoint.sha512.windows>
     <hashicorp.waypoint.url>https://releases.hashicorp.com/waypoint/${hashicorp.waypoint.version}/waypoint_${hashicorp.waypoint.version}_${hashicorp.os}_amd64.zip</hashicorp.waypoint.url>
-    <hashicorp.waypoint.version>0.2.3</hashicorp.waypoint.version>
+    <hashicorp.waypoint.version>0.3.1</hashicorp.waypoint.version>
     <hashicorp.waypoint.download.skip>true</hashicorp.waypoint.download.skip>
 
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
@@ -158,10 +159,10 @@
     <dbunit.version>2.7.0</dbunit.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
     <doxia.site.renderer.version>1.9.2</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.34.1</fabric8io.docker.maven.plugin.version>
+    <fabric8io.docker.maven.plugin.version>0.35.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.2.7</flatten.maven.plugin.version>
-    <frontend.maven.plugin.version>1.11.2</frontend.maven.plugin.version>
+    <frontend.maven.plugin.version>1.11.3</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
@@ -170,8 +171,8 @@
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.0</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>4.3.2</liquibase.version>
-    <mycila.license.maven.plugin>3.0</mycila.license.maven.plugin>
+    <liquibase.version>4.3.4</liquibase.version>
+    <mycila.license.maven.plugin>4.0</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.1</ounce.maven.plugin.version>
 
