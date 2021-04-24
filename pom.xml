@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <!-- A reasonable base group -->
@@ -78,7 +79,7 @@
     <ib.site.server>github.com</ib.site.server>
     <ib.site.view.url>${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.15.1</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.15.2</ib.versioning.support.plugin.version>
 
 
     <!-- -->
@@ -172,7 +173,7 @@
     <kr.motd.maven.plugin.version>1.7.0</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
     <liquibase.version>4.3.4</liquibase.version>
-    <mycila.license.maven.plugin>4.0</mycila.license.maven.plugin>
+    <mycila.license.maven.plugin>4.1</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.1</ounce.maven.plugin.version>
 
@@ -343,6 +344,12 @@
     </extensions>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.infrastructurebuilder.maven</groupId>
+          <artifactId>ibversions-maven-plugin</artifactId>
+          <version>${ib.versioning.support.plugin.version}</version>
+        </plugin>
+
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>ounce-maven-plugin</artifactId>
