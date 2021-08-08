@@ -166,6 +166,7 @@
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
+    <jgit.version>5.12.0.202106070339-r</jgit.version>
     <jsr305.version>3.0.2</jsr305.version>
     <junit.bom.version>5.7.2</junit.bom.version>
     <junit.version>4.13.2</junit.version>
