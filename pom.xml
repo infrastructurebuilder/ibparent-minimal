@@ -151,7 +151,7 @@
     <hashicorp.waypoint.sha512.linux>6a987eaacee1c7c9e03eea8dd880cb77e2cc93c6639165fe5d60a9ff88fd2296e78620d0266e20450b5c918b10347993fa35a400515a9e159ef37226b123fb6b</hashicorp.waypoint.sha512.linux>
     <hashicorp.waypoint.sha512.windows>79764574dc726d2f5e541525408490a0d05540bfb1fe1f056626a5e025358c37366b00d174726afe5584f66024e3d48b029e3c82be0a580b11899f3a0fb8792a</hashicorp.waypoint.sha512.windows>
     <hashicorp.waypoint.url>https://releases.hashicorp.com/waypoint/${hashicorp.waypoint.version}/waypoint_${hashicorp.waypoint.version}_${hashicorp.os}_amd64.zip</hashicorp.waypoint.url>
-    <hashicorp.waypoint.version>0.3.2</hashicorp.waypoint.version>
+    <hashicorp.waypoint.version>0.4.2</hashicorp.waypoint.version>
     <hashicorp.waypoint.download.skip>true</hashicorp.waypoint.download.skip>
 
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
