@@ -39,10 +39,10 @@
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
-    <maven.dependency.plugin.version>3.1.2</maven.dependency.plugin.version>
+    <maven.dependency.plugin.version>3.2.0</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <maven.download.plugin.version>1.6.3</maven.download.plugin.version> <!-- Use Caution when updating -->
-    <maven.enforcer.plugin.version>3.0.0-M3</maven.enforcer.plugin.version>
+    <maven.download.plugin.version>1.6.7</maven.download.plugin.version> <!-- Use Caution when updating -->
+    <maven.enforcer.plugin.version>3.0.0</maven.enforcer.plugin.version>
     <maven.exec.plugin.version>3.0.0</maven.exec.plugin.version>
     <maven.gpg.plugin.version>3.0.1</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
@@ -60,7 +60,7 @@
     <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
     <maven.s3.wagon.version>1.3.3</maven.s3.wagon.version>
     <maven.shared.filtering.version>3.2.0</maven.shared.filtering.version>
-    <maven.site.doxia.model.version>1.9.1</maven.site.doxia.model.version>
+    <maven.site.doxia.model.version>1.10</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
     <maven.site.plugin.version>3.9.1</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
@@ -122,11 +122,11 @@
     <hashicorp.sentinel.download.skip>true</hashicorp.sentinel.download.skip>
 
     <!-- -->
-    <hashicorp.terraform.sha512.darwin>a4d53b1a5697e18cc1f7d750092d6e8fc0ec7e165369424ac014f4e42c4bc669976d1a2d84f13a81f6798603afa36878341f8ce42a61389d0402fc5c2f6f505c</hashicorp.terraform.sha512.darwin>
-    <hashicorp.terraform.sha512.linux>f5be1a390cad5e0b3298b1356516301e2ac916cc1d524e5ffd35e7a567ca0712341cf1339d9eab19af5f1c680601f678e1d014bd2c4ffd61165bb23628dbc136</hashicorp.terraform.sha512.linux>
-    <hashicorp.terraform.sha512.windows>8ccb5b0c9dca2f5b7ec4e11f3dece8ea389a46617e1fe27c9bbfa2c370b041352c9fe20ad549f04722631c479928a8bedd1508ad91c2f54534240355fcac4aa1</hashicorp.terraform.sha512.windows>
+    <hashicorp.terraform.sha512.darwin>522cce373dd11895d5ceeba14aa3eb60e391b134c3ceaa32950610fc9b1e95d3e02b11479d0aed8fc9e7f1e41c9d5f187be4c41c09a9dc05b9faa2fea14fd20a</hashicorp.terraform.sha512.darwin>
+    <hashicorp.terraform.sha512.linux>522cce373dd11895d5ceeba14aa3eb60e391b134c3ceaa32950610fc9b1e95d3e02b11479d0aed8fc9e7f1e41c9d5f187be4c41c09a9dc05b9faa2fea14fd20a</hashicorp.terraform.sha512.linux>
+    <hashicorp.terraform.sha512.windows>522cce373dd11895d5ceeba14aa3eb60e391b134c3ceaa32950610fc9b1e95d3e02b11479d0aed8fc9e7f1e41c9d5f187be4c41c09a9dc05b9faa2fea14fd20a</hashicorp.terraform.sha512.windows>
     <hashicorp.terraform.url>https://releases.hashicorp.com/terraform/${hashicorp.terraform.version}/terraform_${hashicorp.terraform.version}_${hashicorp.os}_amd64.zip</hashicorp.terraform.url>
-    <hashicorp.terraform.version>1.0.4</hashicorp.terraform.version>
+    <hashicorp.terraform.version>1.0.5</hashicorp.terraform.version>
     <hashicorp.terraform.download.skip>true</hashicorp.terraform.download.skip>
 
     <!-- -->
@@ -158,8 +158,8 @@
     <animal.sniffer.maven.plugin.version>1.20</animal.sniffer.maven.plugin.version>
     <dbunit.version>2.7.2</dbunit.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
-    <doxia.site.renderer.version>1.9.2</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.36.0</fabric8io.docker.maven.plugin.version>
+    <doxia.site.renderer.version>1.10</doxia.site.renderer.version>
+    <fabric8io.docker.maven.plugin.version>0.37.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.2.7</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.12.0</frontend.maven.plugin.version>
@@ -172,7 +172,7 @@
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.0</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>4.3.5</liquibase.version>
+    <liquibase.version>4.4.3</liquibase.version>
     <mycila.license.maven.plugin>4.1</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.1</ounce.maven.plugin.version>
