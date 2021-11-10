@@ -55,6 +55,7 @@
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
     <maven.pdf.plugin.version>1.4</maven.pdf.plugin.version>
     <maven.project.info.plugin.version>3.1.2</maven.project.info.plugin.version>
+    <maven.properties.plugin.version>1.0.10-ib</maven.properties.plugin.version>
     <maven.release.plugin.version>3.0.0-M4</maven.release.plugin.version>
     <maven.remote.resources.version>1.7.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
@@ -353,6 +354,11 @@
           <groupId>org.infrastructurebuilder.maven</groupId>
           <artifactId>ibversions-maven-plugin</artifactId>
           <version>${ib.versioning.support.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.infrastructurebuilder.maven</groupId>
+          <artifactId>properties-maven-plugin</artifactId>
+          <version>${maven.properties.plugin.version}</version>
         </plugin>
 
         <plugin>
