@@ -12,7 +12,7 @@
   <url>https://github.com/${team.group.id}/${project.artifactId}</url>
   <properties>
     <gpg.signing.profiles>release,IBgpgsigning</gpg.signing.profiles>
-    <maven.version>3.8.1</maven.version>
+    <maven.version>3.8.3</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
     <maven.bom.version>${maven.version}.0</maven.bom.version>
     <groovy.version>3.0.8</groovy.version>
@@ -443,7 +443,7 @@
                 </version>
               </requireMavenVersion>
               <banDuplicatePomDependencyVersions />
-              <requireNoRepositories />
+              <!-- <requireNoRepositories /> --> <!--  unfortunately too restrictive -->
             </rules>
           </configuration>
         </plugin>
