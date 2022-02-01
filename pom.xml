@@ -31,17 +31,20 @@
     <team.group.id>infrastructurebuilder</team.group.id>
     <test.coverage.percentage.required>95</test.coverage.percentage.required>
 
+    <java.17.version>17.0.2.8.1-amzn</java.17.version>
+    <java.11.version>11.0.14.9.1-amzn</java.11.version>
+    <java.8.version>8.322.06.2-amzn</java.8.version>
 
     <maven.antrun.plugin.version>3.0.0</maven.antrun.plugin.version>
-    <maven.archetype.plugin.version>3.2.0</maven.archetype.plugin.version>
+    <maven.archetype.plugin.version>3.2.1</maven.archetype.plugin.version>
     <maven.assembly.plugin.version>3.3.0</maven.assembly.plugin.version>
-    <maven.build.helper.plugin.version>3.2.0</maven.build.helper.plugin.version>
+    <maven.build.helper.plugin.version>3.3.0</maven.build.helper.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
     <maven.dependency.plugin.version>3.2.0</maven.dependency.plugin.version>
-    <maven.deploy.plugin.version>3.0.0-M1</maven.deploy.plugin.version>
-    <maven.download.plugin.version>1.6.7</maven.download.plugin.version> <!-- Use Caution when updating -->
+    <maven.deploy.plugin.version>3.0.0-M2</maven.deploy.plugin.version>
+    <maven.download.plugin.version>1.6.8</maven.download.plugin.version> <!-- Use Caution when updating -->
     <maven.enforcer.plugin.version>3.0.0</maven.enforcer.plugin.version>
     <maven.exec.plugin.version>3.0.0</maven.exec.plugin.version>
     <maven.gpg.plugin.version>3.0.1</maven.gpg.plugin.version>
@@ -56,19 +59,19 @@
     <maven.pdf.plugin.version>1.5.1</maven.pdf.plugin.version>
     <maven.project.info.plugin.version>3.1.2</maven.project.info.plugin.version>
     <maven.properties.plugin.version>1.0.11-ib</maven.properties.plugin.version>
-    <maven.release.plugin.version>3.0.0-M4</maven.release.plugin.version>
+    <maven.release.plugin.version>3.0.0-M5</maven.release.plugin.version>
     <maven.remote.resources.version>1.7.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.2.0</maven.resources.plugin.version>
     <maven.s3.wagon.version>1.3.3</maven.s3.wagon.version>
     <maven.shared.filtering.version>3.2.0</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.11.1</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>3.9.1</maven.site.plugin.version>
+    <maven.site.plugin.version>3.10.0</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.0.0</maven.toolchains.plugin.version>
-    <maven.versions.plugin.version>2.8.1</maven.versions.plugin.version>
-    <maven.wagon.version>3.4.3</maven.wagon.version>
+    <maven.versions.plugin.version>2.9.0</maven.versions.plugin.version>
+    <maven.wagon.version>3.5.1</maven.wagon.version>
 
 
     <ib.license.email>admin@infrastructurebuilder.org</ib.license.email>
@@ -157,14 +160,14 @@
     <hashicorp.waypoint.download.skip>true</hashicorp.waypoint.download.skip>
 
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
-    <animal.sniffer.maven.plugin.version>1.20</animal.sniffer.maven.plugin.version>
+    <animal.sniffer.maven.plugin.version>1.21</animal.sniffer.maven.plugin.version>
     <dbunit.version>2.7.2</dbunit.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
     <doxia.site.renderer.version>1.11.1</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.38.0</fabric8io.docker.maven.plugin.version>
+    <fabric8io.docker.maven.plugin.version>0.38.1</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.2.7</flatten.maven.plugin.version>
-    <frontend.maven.plugin.version>1.12.0</frontend.maven.plugin.version>
+    <frontend.maven.plugin.version>1.12.1</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.13.17</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
@@ -174,13 +177,13 @@
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.0</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>4.6.2</liquibase.version>
+    <liquibase.version>4.7.1</liquibase.version>
     <mycila.license.maven.plugin>4.1</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.1</ounce.maven.plugin.version>
 
     <protobuf.version>3.11.2</protobuf.version>
-    <sonar.maven.plugin.version>3.9.0.2155</sonar.maven.plugin.version>
+    <sonar.maven.plugin.version>3.9.1.2184</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.9.4</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
