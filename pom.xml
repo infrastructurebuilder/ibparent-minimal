@@ -12,9 +12,9 @@
   <url>https://github.com/${team.group.id}/${project.artifactId}</url>
   <properties>
     <gpg.signing.profiles>release,IBgpgsigning</gpg.signing.profiles>
-    <maven.version>3.8.3</maven.version>
+    <maven.version>3.8.6</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.0</maven.bom.version>
+    <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
     <groovy.version>3.0.8</groovy.version>
     <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
