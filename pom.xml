@@ -70,7 +70,7 @@
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.1.0</maven.toolchains.plugin.version>
-    <maven.versions.plugin.version>2.11.0</maven.versions.plugin.version>
+    <maven.versions.plugin.version>2.12.0</maven.versions.plugin.version>
     <maven.wagon.version>3.5.2</maven.wagon.version>
 
 
@@ -173,15 +173,15 @@
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
     <jgit.version>5.12.0.202106070339-r</jgit.version>
     <jsr305.version>3.0.2</jsr305.version>
-    <junit.bom.version>5.9.0</junit.bom.version>
+    <junit.bom.version>5.9.1</junit.bom.version>
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.0</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
-    <liquibase.version>4.15.0</liquibase.version>
+    <liquibase.version>4.16.1</liquibase.version>
     <mycila.license.maven.plugin>4.1</mycila.license.maven.plugin>
-    <ounce.maven.plugin.version>1.6.2</ounce.maven.plugin.version>
-    <vertx.version>4.3.3</vertx.version>
+    <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
+    <vertx.version>4.3.4</vertx.version>
 
 
     <protobuf.version>3.11.2</protobuf.version>
@@ -189,7 +189,7 @@
     <spf4j.jdiff.maven.plugin.version>8.9.5</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
-    <tidy.pom.maven.plugin.version>1.1.0</tidy.pom.maven.plugin.version>
+    <tidy.pom.maven.plugin.version>1.2.0</tidy.pom.maven.plugin.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
 
 
