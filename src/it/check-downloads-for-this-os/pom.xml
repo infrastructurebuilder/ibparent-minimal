@@ -27,6 +27,7 @@
   <groupId>org.sample</groupId>
   <artifactId>basic</artifactId>
   <version>1.0</version>
+  <packaging>jar</packaging>
   <properties>
     <surefire.failIfNoTests>false</surefire.failIfNoTests>
     <hashicorp.boundary.download.skip>false</hashicorp.boundary.download.skip>

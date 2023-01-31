@@ -12,7 +12,7 @@
   <url>https://github.com/${team.group.id}/${project.artifactId}</url>
   <properties>
     <gpg.signing.profiles>run-its,release,IBgpgsigning</gpg.signing.profiles>
-    <skip.invoker>true</skip.invoker>
+    <skip.invoker>false</skip.invoker>
     <maven.version>3.8.7</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
     <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
@@ -1051,11 +1051,27 @@
     <profile>
       <id>run-its</id>
       <activation>
-        <activeByDefault>false</activeByDefault>
+        <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
         <skip.invoker>false</skip.invoker>
       </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-invoker-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>invoker-run</id>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
     </profile>
     <profile>
       <id>darwin-hashicorp</id>

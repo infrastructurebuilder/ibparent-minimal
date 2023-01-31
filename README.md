@@ -2,6 +2,10 @@
 
 InfrastructureBuilder minimal parent.  This parent is the root for (nearly all) IB projects.  It contains the dependency management and config for building most of the artifacts within the IB system.
 
+## Building
+
+PRIOR TO RELEASE EXECUTE THE FOLLOWING (takes a while) : `mvn clean install  invoker:run verify`
+
 ## Maven Version
 
 The IB projects are all designed to work with the latest version of Maven.  A secondary goal is working with the latest LTS of Java.  We realize that this can make life difficult for some, but backwards-compatibility is more than a little difficult to manage with such a small team.  So we don't.
