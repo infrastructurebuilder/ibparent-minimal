@@ -11,7 +11,8 @@
   <inceptionYear>2019</inceptionYear>
   <url>https://github.com/${team.group.id}/${project.artifactId}</url>
   <properties>
-    <gpg.signing.profiles>release,IBgpgsigning</gpg.signing.profiles>
+    <gpg.signing.profiles>run-its,release,IBgpgsigning</gpg.signing.profiles>
+    <skip.invoker>true</skip.invoker>
     <maven.version>3.8.7</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
     <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
@@ -120,8 +121,8 @@
 
     <!-- -->
     <hashicorp.sentinel.sha512.darwin>4b074b5ed1022b07a35231540089df2a21212151282f1d6d286e5bb70d3082565a7de08897c83b3316ff3da4d5e20501e59ae107290cd7990396b72962bcbbf1</hashicorp.sentinel.sha512.darwin>
-    <hashicorp.sentinel.sha512.linux>f2d75dacf7ee04c4dd9fd6a522ace144950a67b126bd78b43f872c73fe0ad5f6673bc7b79c56029038a245065292c0f1b74f1694d8a0e59ff595cb8e220c9fcf</hashicorp.sentinel.sha512.linux>
-    <hashicorp.sentinel.sha512.windows>51641e6d5364e1650973626a9c0000774fdb44b346628cb744de1aeee9467b64ff8a8d0b9dbbd0e089a2ba586ac32861a3e4fce5bdc7837a03b5a7b2929de219</hashicorp.sentinel.sha512.windows>
+    <hashicorp.sentinel.sha512.linux>51641e6d5364e1650973626a9c0000774fdb44b346628cb744de1aeee9467b64ff8a8d0b9dbbd0e089a2ba586ac32861a3e4fce5bdc7837a03b5a7b2929de219</hashicorp.sentinel.sha512.linux>
+    <hashicorp.sentinel.sha512.windows>8ca9be17a350d37cdd22a48f5ba730f1b13d8ddfa23c5419397183308ccad80e7b23f8daa5ab3148d134146a3413ee5109deabf04584d0ddc03ded2e8a3bfc7f</hashicorp.sentinel.sha512.windows>
     <hashicorp.sentinel.url>https://releases.hashicorp.com/sentinel/${hashicorp.sentinel.version}/sentinel_${hashicorp.sentinel.version}_${hashicorp.os}_amd64.zip</hashicorp.sentinel.url>
     <hashicorp.sentinel.version>0.19.2</hashicorp.sentinel.version>
     <hashicorp.sentinel.download.skip>true</hashicorp.sentinel.download.skip>
@@ -469,20 +470,18 @@
           <artifactId>maven-invoker-plugin</artifactId>
           <version>${maven.invoker.plugin.version}</version>
           <configuration>
+            <skipInstallation>${skip.invoker}</skipInstallation>
+            <skipInvocation>${skip.invoker}</skipInvocation>
             <projectsDirectory>src/it</projectsDirectory>
             <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
             <settingsFile>src/it/settings.xml</settingsFile>
             <preBuildHookScript>setup</preBuildHookScript>
             <postBuildHookScript>verify</postBuildHookScript>
             <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
-            <setupIncludes>
-              <setupInclude>test-parent/pom.xml</setupInclude>
-            </setupIncludes>
             <pomIncludes>
               <pomInclude>*/pom.xml</pomInclude>
             </pomIncludes>
             <filterProperties>
-              <projectNameString>OVERRIDE_PROJECT_NAME</projectNameString>
             </filterProperties>
           </configuration>
         </plugin>
@@ -870,6 +869,10 @@
     </testResources>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-invoker-plugin</artifactId>
+      </plugin>
+      <plugin>
         <groupId>com.googlecode.maven-download-plugin</groupId>
         <artifactId>download-maven-plugin</artifactId>
         <configuration>
@@ -1045,6 +1048,15 @@
     </plugins>
   </reporting>
   <profiles>
+    <profile>
+      <id>run-its</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>
+        <skip.invoker>false</skip.invoker>
+      </properties>
+    </profile>
     <profile>
       <id>darwin-hashicorp</id>
       <activation>
