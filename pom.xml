@@ -1058,6 +1058,13 @@
       </properties>
       <build>
         <plugins>
+          <!--
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>${maven.install.plugin.version}</version>
+
+        </plugin>
+        -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-invoker-plugin</artifactId>
@@ -1065,6 +1072,7 @@
               <execution>
                 <id>invoker-run</id>
                 <goals>
+                  <goal>install</goal>
                   <goal>run</goal>
                 </goals>
               </execution>
