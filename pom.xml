@@ -33,7 +33,7 @@
   <url>https://github.com/${team.group.id}/${project.artifactId}</url>
   <properties>
     <gpg.signing.profiles>run-its,release,IBgpgsigning</gpg.signing.profiles>
-    <ib.source.formats.version>0.1.0-test</ib.source.formats.version>
+    <ib.source.formats.version>0.3.0</ib.source.formats.version>
 
     <skip.invoker>false</skip.invoker>
     <maven.version>3.8.7</maven.version>
@@ -682,8 +682,6 @@
           <artifactId>tidy-maven-plugin</artifactId>
           <version>${tidy.pom.maven.plugin.version}</version>
           <configuration>
-            <!-- FIXME Skipping until https://github.com/mojohaus/tidy-maven-plugin/issues/7 -->
-            <skip>true</skip>
             <indentSize>${indent.size}</indentSize>
             <lineLength>${line.length}</lineLength>
           </configuration>
