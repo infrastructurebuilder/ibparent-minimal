@@ -121,17 +121,17 @@
 
     <maven.antrun.plugin.version>3.1.0</maven.antrun.plugin.version>
     <maven.archetype.plugin.version>3.2.1</maven.archetype.plugin.version>
-    <maven.assembly.plugin.version>3.5.0</maven.assembly.plugin.version>
-    <maven.build.helper.plugin.version>3.3.0</maven.build.helper.plugin.version>
+    <maven.assembly.plugin.version>3.6.0</maven.assembly.plugin.version>
+    <maven.build.helper.plugin.version>3.4.0</maven.build.helper.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
     <maven.clean.plugin.version>3.2.0</maven.clean.plugin.version>
-    <maven.dependency.plugin.version>3.5.0</maven.dependency.plugin.version>
+    <maven.dependency.plugin.version>3.6.0</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.1.1</maven.deploy.plugin.version>
-    <maven.download.plugin.version>1.6.8</maven.download.plugin.version> <!-- Use Caution when updating -->
+    <maven.download.plugin.version>1.7.0</maven.download.plugin.version> <!-- Use Caution when updating -->
     <maven.enforcer.plugin.version>3.3.0</maven.enforcer.plugin.version>
     <maven.exec.plugin.version>3.1.0</maven.exec.plugin.version>
-    <maven.gpg.plugin.version>3.0.1</maven.gpg.plugin.version>
+    <maven.gpg.plugin.version>3.1.0</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.1.1</maven.install.plugin.version>
     <maven.invoker.plugin.version>3.5.1</maven.invoker.plugin.version>
@@ -144,15 +144,15 @@
     <maven.project.info.plugin.version>3.4.3</maven.project.info.plugin.version>
     <maven.properties.plugin.version>1.0.11-ib</maven.properties.plugin.version>
     <maven.release.plugin.version>3.0.0</maven.release.plugin.version>
-    <maven.remote.resources.version>3.0.0</maven.remote.resources.version>
+    <maven.remote.resources.version>3.1.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.3.1</maven.resources.plugin.version>
     <maven.s3.wagon.version>1.3.3</maven.s3.wagon.version>
     <maven.shared.filtering.version>3.3.1</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.12.0</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>4.0.0-M7</maven.site.plugin.version>
+    <maven.site.plugin.version>4.0.0-M8</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
-    <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
+    <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.1.0</maven.toolchains.plugin.version>
     <maven.versions.plugin.version>2.15.0</maven.versions.plugin.version>
     <maven.wagon.version>3.5.3</maven.wagon.version>
@@ -185,13 +185,13 @@
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
     <hashicorp.consul.version>1.15.2</hashicorp.consul.version>
     <hashicorp.consul.download.skip>true</hashicorp.consul.download.skip>
-    <!-- -->
 
-    <hashicorp.nomad.sha512.darwin>d125e769b4868fa0f7daca74fd23e7c5cae91aebf04c98b4eb177d2dc80f08db742e82f9310af617247f0650989e015effd047b3435858c667d182b589bb3450</hashicorp.nomad.sha512.darwin>
-    <hashicorp.nomad.sha512.linux>1b8e945b29a51a67c38eb2dac2bedcfa1304ea45b1f685cab93fb7e24efa21ac79472dde06079336f22f0cc2eaf169d25bb4b55a3cb7ae8c35a8a9f231d7f71a</hashicorp.nomad.sha512.linux>
-    <hashicorp.nomad.sha512.windows>cc86f669778a6b6e12358309cc47b55f47a91b95644575feccd7b15890cee2b0b21621092a4e79d5c568e79509aea42f122849f2510d5443a5c13982a32abe21</hashicorp.nomad.sha512.windows>
+    <!-- -->
+    <hashicorp.nomad.sha512.darwin>460612c27305f4815755a6cce392a3997f516e34520ea796b75ebf121d259f14a324545adb907ac0c63b87d57ba9a343b65dac696c290559463f9c997f439461</hashicorp.nomad.sha512.darwin>
+    <hashicorp.nomad.sha512.linux>c1b5687e2769d138a6f73365fa15e5b69dc289d0bc2b83fb104660cca0463679e19a93eb0dfce0d81671d9e8e5a7861232728152a982c2ddff1abcab8b37110b</hashicorp.nomad.sha512.linux>
+    <hashicorp.nomad.sha512.windows>f511d69a62ab272496a6a6f5cec101401c10cade288e3740cbe77a328ea9c9ae91daffe05228901c6e989083bbec039ed26694bbf42d418cdc4f1df3fe00f51a</hashicorp.nomad.sha512.windows>
     <hashicorp.nomad.url>https://releases.hashicorp.com/nomad/${hashicorp.nomad.version}/nomad_${hashicorp.nomad.version}_${hashicorp.os}_amd64.zip</hashicorp.nomad.url>
-    <hashicorp.nomad.version>1.5.5</hashicorp.nomad.version>
+    <hashicorp.nomad.version>1.5.6</hashicorp.nomad.version>
     <hashicorp.nomad.download.skip>true</hashicorp.nomad.download.skip>
 
     <!-- -->
@@ -222,10 +222,10 @@
     <!-- -->
     <!--  Vagrant has installers for Windows and Mac.  IB setup can't really drive those installations -->
     <!-- <hashicorp.vagrant.sha512.darwin>7f4e441b07c71bb6a896e778a7abe7db6027fe32a6d493c37cba98054e203c1949c7d69e47e506aaeb154c8b2cc7cfa4a2eee6201097abf59f9fa080d251b1e3</hashicorp.vagrant.sha512.darwin> -->
-    <hashicorp.vagrant.sha512.linux>5b0463ff94d4b5440307f5a988ace510ddfe949394213b3632e161e7a5ebbe1cc72f0b93f63b80117dcd3282cf59d175f9d906bdc1d0866d7cf514961a24e316</hashicorp.vagrant.sha512.linux>
+    <hashicorp.vagrant.sha512.linux>b92293feef10dad28d3a5f7d2bb981bb194b451d38ef1978798dcb0a0cfd1c02fb0bff7449487328e7c7e9ed17c0b4d3330443a88a37afa4960fbb09aa223b28</hashicorp.vagrant.sha512.linux>
     <!-- <hashicorp.vagrant.sha512.windows>7c6feedffdb8cd711e9f54cda39eb4e89f6ea88ba12c627459a699749e15ffcaaacf8d4f4ef465c8d27ff179ef77e8328d2be2dcf84b880546160683928d9c85</hashicorp.vagrant.sha512.windows> -->
     <hashicorp.vagrant.url>https://releases.hashicorp.com/vagrant/${hashicorp.vagrant.version}/vagrant_${hashicorp.vagrant.version}_${hashicorp.os}_amd64.zip</hashicorp.vagrant.url>
-    <hashicorp.vagrant.version>2.3.5</hashicorp.vagrant.version>
+    <hashicorp.vagrant.version>2.3.6</hashicorp.vagrant.version>
     <hashicorp.vagrant.download.skip>true</hashicorp.vagrant.download.skip>
 
     <!-- -->
@@ -248,10 +248,10 @@
     <animal.sniffer.maven.plugin.version>1.23</animal.sniffer.maven.plugin.version>
     <dbunit.version>2.7.3</dbunit.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
-    <doxia.site.renderer.version>2.0.0-M8</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.42.1</fabric8io.docker.maven.plugin.version>
+    <doxia.site.renderer.version>2.0.0-M10</doxia.site.renderer.version>
+    <fabric8io.docker.maven.plugin.version>0.43.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
-    <flatten.maven.plugin.version>1.4.1</flatten.maven.plugin.version>
+    <flatten.maven.plugin.version>1.5.0</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.12.1</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.14.0</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
@@ -264,7 +264,7 @@
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <vertx.version>4.4.2</vertx.version>
-    <liquibase.version>4.21.1</liquibase.version>
+    <liquibase.version>4.22.0</liquibase.version>
     <mycila.license.maven.plugin>4.2</mycila.license.maven.plugin>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
 
