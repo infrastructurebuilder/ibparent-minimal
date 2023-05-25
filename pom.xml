@@ -702,6 +702,7 @@
           <groupId>org.sonatype.plugins</groupId>
           <artifactId>nexus-staging-maven-plugin</artifactId>
           <version>${maven.nexus.staging.plugin.version}</version>
+          <extensions>true</extensions>
           <configuration>
             <skipStaging>${maven.nexus.staging.plugin.skipStaging}</skipStaging>
             <serverId>ossrh</serverId>
