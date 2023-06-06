@@ -179,11 +179,11 @@
     <hashicorp.boundary.download.skip>true</hashicorp.boundary.download.skip>
 
     <!-- -->
-    <hashicorp.consul.sha512.darwin>4142db256343c456e7483ac87bed720e81cc6c3150de7735333f986d061a9a802be3233c6dc7da4a8098cfd60d9506f2f84377ae2f8cb841cdc3386415effd95</hashicorp.consul.sha512.darwin>
-    <hashicorp.consul.sha512.linux>27bedfdeee76766520586dbf21be2ef6d965dd227d4a05115e235046f266e7a0c1299702a2f2f953b06e9aa64a8c1aa4ae137ee0abe7d2b865bae9f97ea86ff3</hashicorp.consul.sha512.linux>
-    <hashicorp.consul.sha512.windows>7f8690e4de1bd5d77aa8fa429194c9f274274a6e3f46d9571e368379aa7beaaabf9bf2ccfbdfd03e207ccda46300adedff955eaeb39df4c20bf5ba071396d668</hashicorp.consul.sha512.windows>
+    <hashicorp.consul.sha512.darwin>a67f764d922ec7d7a555caff9e6789099ed8d0c2e6cb4cb02649c2f47daffedef913e97b48a79818a65d4df7d9a7818699ea4f8d3f36d8ef575dc94002e06b10</hashicorp.consul.sha512.darwin>
+    <hashicorp.consul.sha512.linux>a7f02e94913dafd409ea1fbc0827645446fc6c0796d83723a0f50301a61e147d317ea29edbb96d0dc5ce6dbd0d456978a584cb34e3bae546726ec50343407522</hashicorp.consul.sha512.linux>
+    <hashicorp.consul.sha512.windows>eb6630bc2e7787974c7a0c254bdac6dbf6b5eebd0e713b8cdf6cac1d993ca4c3757440f5c6f599983ffe814f54c0d23847911a8d035bd5e9dfc7af95afea2d68</hashicorp.consul.sha512.windows>
     <hashicorp.consul.url>https://releases.hashicorp.com/consul/${hashicorp.consul.version}/consul_${hashicorp.consul.version}_${hashicorp.os}_amd64.zip</hashicorp.consul.url>
-    <hashicorp.consul.version>1.15.2</hashicorp.consul.version>
+    <hashicorp.consul.version>1.15.3</hashicorp.consul.version>
     <hashicorp.consul.download.skip>true</hashicorp.consul.download.skip>
 
     <!-- -->
@@ -195,19 +195,19 @@
     <hashicorp.nomad.download.skip>true</hashicorp.nomad.download.skip>
 
     <!-- -->
-    <hashicorp.packer.sha512.darwin>53b52f1eeefbd7006d35afd0a8ed1ef3ba1c36d775e3586753b4281e84a491df8449acc97b06de4fa4916401e84e8bf34529b664946be9480524c99aeba92199</hashicorp.packer.sha512.darwin>
-    <hashicorp.packer.sha512.linux>bbf90c60de9d2d8509e8502e3ce92df59c109d4f0202f4126f4eec4e6cbc93a3f010bca00de7841eeb6bb4dc611a7d00cd5f6658b1ca87d69f209aa0b2991847</hashicorp.packer.sha512.linux>
-    <hashicorp.packer.sha512.windows>f639ce960f9de1004a30c31c8253b67eb05e4ce193fe954db9193fcb7459688a470789143d7b7079a02d908dc7999f859e53cd2cbdf9ef7f78b1b14ab843d752</hashicorp.packer.sha512.windows>
+    <hashicorp.packer.sha512.darwin>b722745c7fa34f0d4caa8c8e89d749458387814d28a7ee3febdcda8221849bd21ec61c2318312e3212bad0b9c73a4343d70ac52c307c1107967809597dfe7662</hashicorp.packer.sha512.darwin>
+    <hashicorp.packer.sha512.linux>abc154456c1e4bcb6e450b1d97731639c50dbff5923cc32942a050005e0bf439b4b3bdcc35ef148ea2b528d2857285d5926ac39b6a09728d5544a70b23675570</hashicorp.packer.sha512.linux>
+    <hashicorp.packer.sha512.windows>2aa896e6b5c384f781d6c845baa8089b9074e88c41f8bfb998448dd01e998ee84e60d57ae39fc9b24dee25e3e5358ea7c2373543b99443c0c38d5db31e1928ad</hashicorp.packer.sha512.windows>
     <hashicorp.packer.url>https://releases.hashicorp.com/packer/${hashicorp.packer.version}/packer_${hashicorp.packer.version}_${hashicorp.os}_amd64.zip</hashicorp.packer.url>
-    <hashicorp.packer.version>1.8.7</hashicorp.packer.version>
+    <hashicorp.packer.version>1.9.1</hashicorp.packer.version>
     <hashicorp.packer.download.skip>true</hashicorp.packer.download.skip>
 
     <!-- -->
-    <hashicorp.sentinel.sha512.darwin>6bc709795a4e140e823262d1b2e9ec5405144fcbc7de3e43556ce15ca302ee11aa06aab19bb3a26c7d0eaeb6bc022ba60352dae6c37cbe0af13302b1961e2fbf</hashicorp.sentinel.sha512.darwin>
-    <hashicorp.sentinel.sha512.linux>a4368673025b30bbd1239d9e1fc85b043cff48737ad3d8a72f638be430ea1eaf8e616f36408a28035d08cdf22749e5153b34524a2ae1ac4bbac8523568df44e1</hashicorp.sentinel.sha512.linux>
-    <hashicorp.sentinel.sha512.windows>7ac26337392dd6cc16790027491e962d66a4ff8e5d0483011f8c3e6d144ca1a4f96eac0206cc02c3fbc724d62d53044a894e17c34c11aeb092fba9faa25fec72</hashicorp.sentinel.sha512.windows>
+    <hashicorp.sentinel.sha512.darwin>09e3f240ccee38ebe2cc93b55c545e7e3f913b409549cc24d2e3298f53f1e984482bcafe6bd09058f5f11f9569a8b58ca473bcd326388593b1d38c4ab43e7173</hashicorp.sentinel.sha512.darwin>
+    <hashicorp.sentinel.sha512.linux>b5154e622c48673bb82c1fa8f26155f94df09873b791764945e3ac347a8104f219ffca29c449f945cfcc44d07120dbf1bcf715e4343593968ed4d7c0adcabfe0</hashicorp.sentinel.sha512.linux>
+    <hashicorp.sentinel.sha512.windows>2ae4a9d4129b47503cb34858f4b0c89b830d47eda4e4b702fc52e3b7a690db37f391cb61c3abbf3c4157f4cb2c1940c48fd049d7e98947c8235b9121b04c5c36</hashicorp.sentinel.sha512.windows>
     <hashicorp.sentinel.url>https://releases.hashicorp.com/sentinel/${hashicorp.sentinel.version}/sentinel_${hashicorp.sentinel.version}_${hashicorp.os}_amd64.zip</hashicorp.sentinel.url>
-    <hashicorp.sentinel.version>0.21.1</hashicorp.sentinel.version>
+    <hashicorp.sentinel.version>0.22.0</hashicorp.sentinel.version>
     <hashicorp.sentinel.download.skip>true</hashicorp.sentinel.download.skip>
 
     <!-- -->
