@@ -110,6 +110,7 @@
     <issue.management.url>https://${git.source.host}/${team.group.id}/${project.artifactId}/issues</issue.management.url>
     <ci.url>https://ci.infrastructurebuilder.com</ci.url>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <site.path>org.infrastructurebuilder/ibparent-minimal/${project.version}</site.path>
     <surefire.failIfNoTests>true</surefire.failIfNoTests>
     <team.group.id>infrastructurebuilder</team.group.id>
