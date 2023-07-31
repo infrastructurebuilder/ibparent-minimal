@@ -252,7 +252,7 @@
     <dbunit.version>2.7.3</dbunit.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
     <doxia.site.renderer.version>2.0.0-M11</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.43.0</fabric8io.docker.maven.plugin.version>
+    <fabric8io.docker.maven.plugin.version>0.43.2</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.5.0</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.13.34</frontend.maven.plugin.version>
