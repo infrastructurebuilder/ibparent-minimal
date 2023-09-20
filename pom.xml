@@ -18,7 +18,9 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <!-- A reasonable base group -->
@@ -87,7 +89,8 @@
     </snapshotRepository>
     <repository>
       <id>ossrh</id>
-      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <url>
+        https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
   </distributionManagement>
 
@@ -98,7 +101,7 @@
     <skip.invoker>false</skip.invoker>
     <maven.version>3.9.4</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.0</maven.bom.version>
+    <maven.bom.version>${maven.version}.1</maven.bom.version>
     <groovy.version>3.0.8</groovy.version>
     <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
@@ -107,7 +110,8 @@
     <git.source.host>github.com</git.source.host>
     <git.scm.url>
       https://${git.source.host}/${team.group.id}/${project.artifactId}</git.scm.url>
-    <git.url>git@${git.source.host}:${team.group.id}/${project.artifactId}.git</git.url>
+    <git.url>
+      git@${git.source.host}:${team.group.id}/${project.artifactId}.git</git.url>
     <issue.management.url>
       https://${git.source.host}/${team.group.id}/${project.artifactId}/issues</issue.management.url>
     <ci.url>https://ci.infrastructurebuilder.com</ci.url>
@@ -136,7 +140,7 @@
     <maven.download.plugin.groupId>org.infrastructurebuilder.usurped</maven.download.plugin.groupId>
     <maven.download.plugin.version>1.7.1.1</maven.download.plugin.version> <!--
     Use Caution when updating -->
-    <maven.enforcer.plugin.version>3.4.0</maven.enforcer.plugin.version>
+    <maven.enforcer.plugin.version>3.4.1</maven.enforcer.plugin.version>
     <maven.exec.plugin.version>3.1.0</maven.exec.plugin.version>
     <maven.gpg.plugin.version>3.1.0</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
@@ -167,7 +171,8 @@
 
     <ib.license.email>admin@infrastructurebuilder.org</ib.license.email>
     <ib.license.name>admin</ib.license.name>
-    <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
+    <ib.site.path>
+      ${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
     <ib.site.repo>repository/sites</ib.site.repo>
     <ib.site.root>${ib.site.scheme}://${ib.site.server}/${ib.site.repo}</ib.site.root>
     <ib.site.scheme>https</ib.site.scheme>
@@ -251,7 +256,8 @@
     <hashicorp.terraform.download.skip>true</hashicorp.terraform.download.skip>
 
     <!-- -->
-    <!--  Vagrant has installers for Windows and Mac.  IB setup can't really drive
+    <!--  Vagrant has installers for Windows and Mac.  IB setup can't really
+    drive
     those installations -->
     <!--
     <hashicorp.vagrant.sha512.darwin>7f4e441b07c71bb6a896e778a7abe7db6027fe32a6d493c37cba98054e203c1949c7d69e47e506aaeb154c8b2cc7cfa4a2eee6201097abf59f9fa080d251b1e3</hashicorp.vagrant.sha512.darwin> -->
@@ -297,7 +303,7 @@
     <fabric8io.docker.maven.plugin.version>0.43.4</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.5.0</flatten.maven.plugin.version>
-    <frontend.maven.plugin.version>1.13.34</frontend.maven.plugin.version>
+    <frontend.maven.plugin.version>1.14.0</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.14.0</gitlog.maven.plugin.version>
     <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
@@ -308,13 +314,13 @@
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
-    <vertx.version>4.4.4</vertx.version>
-    <liquibase.version>4.23.1</liquibase.version>
+    <vertx.version>4.4.5</vertx.version>
+    <liquibase.version>4.23.2</liquibase.version>
     <mycila.license.maven.plugin>4.2</mycila.license.maven.plugin>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
 
     <protobuf.version>3.11.2</protobuf.version>
-    <sonar.maven.plugin.version>3.9.1.2184</sonar.maven.plugin.version>
+    <sonar.maven.plugin.version>3.10.0.2594</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.9.8</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
@@ -461,10 +467,13 @@
           <groupId>com.github.os72</groupId>
           <artifactId>protoc-jar-maven-plugin</artifactId>
           <version>${os72.protoc.maven.plugin.version}</version>
-          <!-- See http://os72.github.io/protoc-jar-maven-plugin/index.html -->
+          <!-- See
+          http://os72.github.io/protoc-jar-maven-plugin/index.html -->
           <configuration>
-            <protocArtifact>com.google.protobuf:protoc:${google.protoc.version}</protocArtifact>
-            <!-- this is required for using the standard protobuf types like
+            <protocArtifact>
+              com.google.protobuf:protoc:${google.protoc.version}</protocArtifact>
+            <!-- this is required for using the standard protobuf
+            types like
               Any / Timestamp -->
             <includeStdTypes>${google.protoc.includeStdTypes}</includeStdTypes>
             <outputDirectory>target/generated-sources/protobuf</outputDirectory>
@@ -544,7 +553,8 @@
             <settingsFile>src/it/settings.xml</settingsFile>
             <preBuildHookScript>setup</preBuildHookScript>
             <postBuildHookScript>verify</postBuildHookScript>
-            <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
+            <localRepositoryPath>
+              ${project.build.directory}/local-repo</localRepositoryPath>
             <pomIncludes>
               <pomInclude>*/pom.xml</pomInclude>
             </pomIncludes>
@@ -785,7 +795,8 @@
           <configuration>
             <generateMarkdownChangeLog>true</generateMarkdownChangeLog>
             <generateSimpleHTMLChangeLog>true</generateSimpleHTMLChangeLog>
-            <simpleHTMLChangeLogFilename>github-changelog-simple.html</simpleHTMLChangeLogFilename>
+            <simpleHTMLChangeLogFilename>
+              github-changelog-simple.html</simpleHTMLChangeLogFilename>
           </configuration>
         </plugin>
         <plugin>
@@ -836,7 +847,8 @@
             </execution>
           </executions>
           <configuration>
-            <header>com/mycila/maven/plugin/license/templates/IB-APACHE2.txt</header>
+            <header>
+              com/mycila/maven/plugin/license/templates/IB-APACHE2.txt</header>
             <strictCheck>true</strictCheck>
             <properties>
               <owner>${ib.license.name}</owner>
@@ -875,7 +887,8 @@
               <pluginExecutions>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>org.infrastructurebuilder.modello</groupId>
+                    <groupId>
+                      org.infrastructurebuilder.modello</groupId>
                     <artifactId>modello-maven-plugin-usurped</artifactId>
                     <versionRange>[1.11.0.0,)</versionRange>
                     <goals>
@@ -1171,15 +1184,22 @@
       </activation>
       <properties>
         <hashicorp.os>darwin</hashicorp.os>
-        <hashicorp.boundary.download.sha512>${hashicorp.boundary.sha512.darwin}</hashicorp.boundary.download.sha512>
-        <hashicorp.consul.download.sha512>${hashicorp.consul.sha512.darwin}</hashicorp.consul.download.sha512>
-        <hashicorp.nomad.download.sha512>${hashicorp.nomad.sha512.darwin}</hashicorp.nomad.download.sha512>
-        <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.darwin}</hashicorp.packer.download.sha512>
-        <hashicorp.sentinel.download.sha512>${hashicorp.sentinel.sha512.darwin}</hashicorp.sentinel.download.sha512>
+        <hashicorp.boundary.download.sha512>
+          ${hashicorp.boundary.sha512.darwin}</hashicorp.boundary.download.sha512>
+        <hashicorp.consul.download.sha512>
+          ${hashicorp.consul.sha512.darwin}</hashicorp.consul.download.sha512>
+        <hashicorp.nomad.download.sha512>
+          ${hashicorp.nomad.sha512.darwin}</hashicorp.nomad.download.sha512>
+        <hashicorp.packer.download.sha512>
+          ${hashicorp.packer.sha512.darwin}</hashicorp.packer.download.sha512>
+        <hashicorp.sentinel.download.sha512>
+          ${hashicorp.sentinel.sha512.darwin}</hashicorp.sentinel.download.sha512>
         <hashicorp.terraform.download.sha512>
           ${hashicorp.terraform.sha512.darwin}</hashicorp.terraform.download.sha512>
-        <hashicorp.vault.download.sha512>${hashicorp.vault.sha512.darwin}</hashicorp.vault.download.sha512>
-        <hashicorp.waypoint.download.sha512>${hashicorp.waypoint.sha512.darwin}</hashicorp.waypoint.download.sha512>
+        <hashicorp.vault.download.sha512>
+          ${hashicorp.vault.sha512.darwin}</hashicorp.vault.download.sha512>
+        <hashicorp.waypoint.download.sha512>
+          ${hashicorp.waypoint.sha512.darwin}</hashicorp.waypoint.download.sha512>
       </properties>
     </profile>
     <profile>
@@ -1192,15 +1212,22 @@
       </activation>
       <properties>
         <hashicorp.os>linux</hashicorp.os>
-        <hashicorp.boundary.download.sha512>${hashicorp.boundary.sha512.linux}</hashicorp.boundary.download.sha512>
-        <hashicorp.consul.download.sha512>${hashicorp.consul.sha512.linux}</hashicorp.consul.download.sha512>
+        <hashicorp.boundary.download.sha512>
+          ${hashicorp.boundary.sha512.linux}</hashicorp.boundary.download.sha512>
+        <hashicorp.consul.download.sha512>
+          ${hashicorp.consul.sha512.linux}</hashicorp.consul.download.sha512>
         <hashicorp.nomad.download.sha512>${hashicorp.nomad.sha512.linux}</hashicorp.nomad.download.sha512>
-        <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.linux}</hashicorp.packer.download.sha512>
-        <hashicorp.sentinel.download.sha512>${hashicorp.sentinel.sha512.linux}</hashicorp.sentinel.download.sha512>
-        <hashicorp.terraform.download.sha512>${hashicorp.terraform.sha512.linux}</hashicorp.terraform.download.sha512>
+        <hashicorp.packer.download.sha512>
+          ${hashicorp.packer.sha512.linux}</hashicorp.packer.download.sha512>
+        <hashicorp.sentinel.download.sha512>
+          ${hashicorp.sentinel.sha512.linux}</hashicorp.sentinel.download.sha512>
+        <hashicorp.terraform.download.sha512>
+          ${hashicorp.terraform.sha512.linux}</hashicorp.terraform.download.sha512>
         <hashicorp.vault.download.sha512>${hashicorp.vault.sha512.linux}</hashicorp.vault.download.sha512>
-        <hashicorp.vagrant.download.sha512>${hashicorp.vagrant.sha512.linux}</hashicorp.vagrant.download.sha512>
-        <hashicorp.waypoint.download.sha512>${hashicorp.waypoint.sha512.linux}</hashicorp.waypoint.download.sha512>
+        <hashicorp.vagrant.download.sha512>
+          ${hashicorp.vagrant.sha512.linux}</hashicorp.vagrant.download.sha512>
+        <hashicorp.waypoint.download.sha512>
+          ${hashicorp.waypoint.sha512.linux}</hashicorp.waypoint.download.sha512>
       </properties>
     </profile>
     <profile>
@@ -1212,15 +1239,22 @@
       </activation>
       <properties>
         <hashicorp.os>windows</hashicorp.os>
-        <hashicorp.boundary.download.sha512>${hashicorp.boundary.sha512.windows}</hashicorp.boundary.download.sha512>
-        <hashicorp.consul.download.sha512>${hashicorp.consul.sha512.windows}</hashicorp.consul.download.sha512>
-        <hashicorp.nomad.download.sha512>${hashicorp.nomad.sha512.windows}</hashicorp.nomad.download.sha512>
-        <hashicorp.packer.download.sha512>${hashicorp.packer.sha512.windows}</hashicorp.packer.download.sha512>
-        <hashicorp.sentinel.download.sha512>${hashicorp.sentinel.sha512.windows}</hashicorp.sentinel.download.sha512>
+        <hashicorp.boundary.download.sha512>
+          ${hashicorp.boundary.sha512.windows}</hashicorp.boundary.download.sha512>
+        <hashicorp.consul.download.sha512>
+          ${hashicorp.consul.sha512.windows}</hashicorp.consul.download.sha512>
+        <hashicorp.nomad.download.sha512>
+          ${hashicorp.nomad.sha512.windows}</hashicorp.nomad.download.sha512>
+        <hashicorp.packer.download.sha512>
+          ${hashicorp.packer.sha512.windows}</hashicorp.packer.download.sha512>
+        <hashicorp.sentinel.download.sha512>
+          ${hashicorp.sentinel.sha512.windows}</hashicorp.sentinel.download.sha512>
         <hashicorp.terraform.download.sha512>
           ${hashicorp.terraform.sha512.windows}</hashicorp.terraform.download.sha512>
-        <hashicorp.vault.download.sha512>${hashicorp.vault.sha512.windows}</hashicorp.vault.download.sha512>
-        <hashicorp.waypoint.download.sha512>${hashicorp.waypoint.sha512.windows}</hashicorp.waypoint.download.sha512>
+        <hashicorp.vault.download.sha512>
+          ${hashicorp.vault.sha512.windows}</hashicorp.vault.download.sha512>
+        <hashicorp.waypoint.download.sha512>
+          ${hashicorp.waypoint.sha512.windows}</hashicorp.waypoint.download.sha512>
       </properties>
     </profile>
     <profile>
@@ -1270,7 +1304,8 @@
               <reportSet>
                 <reports>
                   <report>cim</report>
-                  <!-- take too long time <report>dependencies</report> -->
+                  <!-- take too long time
+                  <report>dependencies</report> -->
                   <report>dependency-convergence</report>
                   <report>dependency-management</report>
                   <!-- already present <report>index</report> -->
