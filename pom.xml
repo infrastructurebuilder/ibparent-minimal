@@ -18,9 +18,7 @@
     @formatter:on
 
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <!-- A reasonable base group -->
@@ -153,7 +151,7 @@
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
     <maven.pdf.plugin.version>1.6.1</maven.pdf.plugin.version>
     <maven.project.info.plugin.version>3.4.5</maven.project.info.plugin.version>
-    <maven.properties.plugin.version>1.2.0.0-ib</maven.properties.plugin.version>
+    <maven.properties.plugin.version>1.2.1.0-ib</maven.properties.plugin.version>
     <maven.release.plugin.version>3.0.1</maven.release.plugin.version>
     <maven.remote.resources.version>3.1.0</maven.remote.resources.version>
     <maven.resources.plugin.version>3.3.1</maven.resources.plugin.version>
