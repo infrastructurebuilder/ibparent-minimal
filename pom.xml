@@ -99,7 +99,7 @@
     <skip.invoker>false</skip.invoker>
     <maven.version>3.9.5</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
+    <maven.bom.version>${maven.version}.0</maven.bom.version>
     <groovy.version>3.0.8</groovy.version>
     <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
