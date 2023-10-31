@@ -130,8 +130,8 @@
     <maven.build.helper.plugin.version>3.4.0</maven.build.helper.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
-    <maven.clean.plugin.version>3.3.1</maven.clean.plugin.version>
-    <maven.dependency.plugin.version>3.6.0</maven.dependency.plugin.version>
+    <maven.clean.plugin.version>3.3.2</maven.clean.plugin.version>
+    <maven.dependency.plugin.version>3.6.1</maven.dependency.plugin.version>
     <maven.deploy.plugin.version>3.1.1</maven.deploy.plugin.version>
     <!--
     <maven.download.plugin.groupId>com.googlecode.maven-download-plugin</maven.download.plugin.groupId> -->
@@ -159,11 +159,11 @@
     <maven.shared.filtering.version>3.3.1</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.12.0</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>4.0.0-M9</maven.site.plugin.version>
+    <maven.site.plugin.version>4.0.0-M11</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.1.0</maven.toolchains.plugin.version>
-    <maven.versions.plugin.version>2.16.0</maven.versions.plugin.version>
+    <maven.versions.plugin.version>2.16.1</maven.versions.plugin.version>
     <maven.wagon.version>3.5.3</maven.wagon.version>
 
 
@@ -178,7 +178,7 @@
     <ib.site.view.url>
       ${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.15.3</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.16.0</ib.versioning.support.plugin.version>
 
     <!-- -->
     <hashicorp.boundary.sha512.darwin>
@@ -293,36 +293,36 @@
     <hashicorp.waypoint.version>0.11.4</hashicorp.waypoint.version>
     <hashicorp.waypoint.download.skip>true</hashicorp.waypoint.download.skip>
 
+
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
     <animal.sniffer.maven.plugin.version>1.23</animal.sniffer.maven.plugin.version>
-    <dbunit.version>2.7.3</dbunit.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
+    <dbunit.version>2.7.3</dbunit.version>
     <doxia.site.renderer.version>2.0.0-M11</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.43.4</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.5.0</flatten.maven.plugin.version>
-    <frontend.maven.plugin.version>1.14.0</frontend.maven.plugin.version>
+    <frontend.maven.plugin.version>1.14.2</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.14.0</gitlog.maven.plugin.version>
-    <google.protoc.version>3.11.2</google.protoc.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
+    <google.protoc.version>3.11.2</google.protoc.version>
     <jgit.version>5.12.0.202106070339-r</jgit.version>
     <jsr305.version>3.0.2</jsr305.version>
     <junit.bom.version>5.10.0</junit.bom.version>
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
+    <liquibase.version>4.24.0</liquibase.version>
+    <mycila.license.maven.plugin>4.3</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
-    <vertx.version>4.4.5</vertx.version>
-    <liquibase.version>4.23.2</liquibase.version>
-    <mycila.license.maven.plugin>4.2</mycila.license.maven.plugin>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
-
     <protobuf.version>3.11.2</protobuf.version>
     <sonar.maven.plugin.version>3.10.0.2594</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.9.8</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>1.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.2.0</tidy.pom.maven.plugin.version>
+    <vertx.version>4.4.6</vertx.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
 
 
