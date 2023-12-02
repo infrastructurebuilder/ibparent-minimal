@@ -127,7 +127,7 @@
     <maven.antrun.plugin.version>3.1.0</maven.antrun.plugin.version>
     <maven.archetype.plugin.version>3.2.1</maven.archetype.plugin.version>
     <maven.assembly.plugin.version>3.6.0</maven.assembly.plugin.version>
-    <maven.build.helper.plugin.version>3.4.0</maven.build.helper.plugin.version>
+    <maven.build.helper.plugin.version>3.5.0</maven.build.helper.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
     <maven.clean.plugin.version>3.3.2</maven.clean.plugin.version>
@@ -150,7 +150,7 @@
     <maven.nexus.staging.plugin.version>1.6.13</maven.nexus.staging.plugin.version>
     <maven.pax.plugin.version>1.5</maven.pax.plugin.version>
     <maven.pdf.plugin.version>1.6.1</maven.pdf.plugin.version>
-    <maven.project.info.plugin.version>3.4.5</maven.project.info.plugin.version>
+    <maven.project.info.plugin.version>3.5.0</maven.project.info.plugin.version>
     <maven.properties.plugin.version>1.2.1.0-ib</maven.properties.plugin.version>
     <maven.release.plugin.version>3.0.1</maven.release.plugin.version>
     <maven.remote.resources.version>3.1.0</maven.remote.resources.version>
@@ -159,7 +159,7 @@
     <maven.shared.filtering.version>3.3.1</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.12.0</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>4.0.0-M11</maven.site.plugin.version>
+    <maven.site.plugin.version>4.0.0-M12</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.1.0</maven.toolchains.plugin.version>
@@ -178,7 +178,7 @@
     <ib.site.view.url>
       ${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.16.1</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.18.0</ib.versioning.support.plugin.version>
 
     <!-- -->
     <hashicorp.boundary.sha512.darwin>
@@ -298,11 +298,11 @@
     <animal.sniffer.maven.plugin.version>1.23</animal.sniffer.maven.plugin.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
     <dbunit.version>2.7.3</dbunit.version>
-    <doxia.site.renderer.version>2.0.0-M13</doxia.site.renderer.version>
+    <doxia.site.renderer.version>2.0.0-M16</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.43.4</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.5.0</flatten.maven.plugin.version>
-    <frontend.maven.plugin.version>1.14.2</frontend.maven.plugin.version>
+    <frontend.maven.plugin.version>1.15.0</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.14.0</gitlog.maven.plugin.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
     <google.protoc.version>3.11.2</google.protoc.version>
