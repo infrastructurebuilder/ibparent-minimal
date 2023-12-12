@@ -318,7 +318,7 @@
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
     <protobuf.version>3.11.2</protobuf.version>
     <sonar.maven.plugin.version>3.10.0.2594</sonar.maven.plugin.version>
-    <spf4j.jdiff.maven.plugin.version>8.9.8</spf4j.jdiff.maven.plugin.version>
+    <spf4j.jdiff.maven.plugin.version>8.9.9</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>3.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.2.0</tidy.pom.maven.plugin.version>
