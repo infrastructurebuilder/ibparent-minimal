@@ -97,9 +97,9 @@
     <ib.source.formats.version>0.3.0</ib.source.formats.version>
 
     <skip.invoker>false</skip.invoker>
-    <maven.version>3.9.5</maven.version>
+    <maven.version>3.9.6</maven.version>
     <enforcer.maven.version>${maven.version}</enforcer.maven.version>
-    <maven.bom.version>${maven.version}.2</maven.bom.version>
+    <maven.bom.version>${maven.version}.0</maven.bom.version>
     <groovy.version>3.0.8</groovy.version>
     <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
@@ -120,9 +120,9 @@
     <team.group.id>infrastructurebuilder</team.group.id>
     <test.coverage.percentage.required>95</test.coverage.percentage.required>
 
-    <java.17.version>17.0.3.6.1-amzn</java.17.version>
-    <java.11.version>11.0.15.9.1-amzn</java.11.version>
-    <java.8.version>8.332.08.1-amzn</java.8.version>
+    <java.17.version>17.0.9-amzn</java.17.version>
+    <java.11.version>11.0.21-amzn</java.11.version>
+    <java.8.version>8.0.392-amzn</java.8.version>
 
     <maven.antrun.plugin.version>3.1.0</maven.antrun.plugin.version>
     <maven.archetype.plugin.version>3.2.1</maven.archetype.plugin.version>
@@ -159,7 +159,7 @@
     <maven.shared.filtering.version>3.3.1</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.12.0</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>4.0.0-M12</maven.site.plugin.version>
+    <maven.site.plugin.version>4.0.0-M13</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.3.0</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.1.0</maven.toolchains.plugin.version>
@@ -312,7 +312,7 @@
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>4.25.0</liquibase.version>
+    <liquibase.version>4.25.1</liquibase.version>
     <mycila.license.maven.plugin>4.3</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
@@ -322,7 +322,7 @@
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>3.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.2.0</tidy.pom.maven.plugin.version>
-    <vertx.version>4.5.0</vertx.version>
+    <vertx.version>4.5.1</vertx.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
 
 
