@@ -178,7 +178,7 @@
     <ib.site.view.url>
       ${ib.site.scheme}://${ib.site.server}/${project.artifactId}</ib.site.view.url>
     <ib.site.wagon.method>dav</ib.site.wagon.method>
-    <ib.versioning.support.plugin.version>0.18.0</ib.versioning.support.plugin.version>
+    <ib.versioning.support.plugin.version>0.20.0</ib.versioning.support.plugin.version>
 
     <!-- -->
     <hashicorp.boundary.sha512.darwin>
