@@ -103,6 +103,7 @@
     <groovy.version>3.0.8</groovy.version>
     <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
+    <expected.instant.format>yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS'Z'</expected.instant.format>
 
     <git.http.url>${git.scm.url}.git</git.http.url>
     <git.source.host>github.com</git.source.host>
