@@ -302,7 +302,7 @@
     <doxia.site.renderer.version>2.0.0-M16</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.43.4</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
-    <flatten.maven.plugin.version>1.5.0</flatten.maven.plugin.version>
+    <flatten.maven.plugin.version>1.6.0</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.15.0</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.14.0</gitlog.maven.plugin.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
