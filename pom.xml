@@ -127,7 +127,7 @@
 
     <maven.antrun.plugin.version>3.1.0</maven.antrun.plugin.version>
     <maven.archetype.plugin.version>3.2.1</maven.archetype.plugin.version>
-    <maven.assembly.plugin.version>3.7.0</maven.assembly.plugin.version>
+    <maven.assembly.plugin.version>3.7.1</maven.assembly.plugin.version>
     <maven.build.helper.plugin.version>3.5.0</maven.build.helper.plugin.version>
     <maven.changelog.plugin.version>2.3</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
@@ -141,7 +141,7 @@
     Use Caution when updating -->
     <maven.enforcer.plugin.version>3.4.1</maven.enforcer.plugin.version>
     <maven.exec.plugin.version>3.2.0</maven.exec.plugin.version>
-    <maven.gpg.plugin.version>3.2.0</maven.gpg.plugin.version>
+    <maven.gpg.plugin.version>3.2.2</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
     <maven.install.plugin.version>3.1.1</maven.install.plugin.version>
     <maven.invoker.plugin.version>3.6.0</maven.invoker.plugin.version>
@@ -323,7 +323,7 @@
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>3.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.2.0</tidy.pom.maven.plugin.version>
-    <vertx.version>4.5.5</vertx.version>
+    <vertx.version>4.5.6</vertx.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
 
 
