@@ -160,7 +160,7 @@
     <maven.shared.filtering.version>3.3.2</maven.shared.filtering.version>
     <maven.site.doxia.model.version>1.12.0</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>4.0.0-M13</maven.site.plugin.version>
+    <maven.site.plugin.version>4.0.0-M14</maven.site.plugin.version>
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
     <maven.source.plugin.version>3.3.1</maven.source.plugin.version>
     <maven.toolchains.plugin.version>3.2.0</maven.toolchains.plugin.version>
@@ -314,7 +314,7 @@
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
     <liquibase.version>4.27.0</liquibase.version>
-    <mycila.license.maven.plugin>4.3</mycila.license.maven.plugin>
+    <mycila.license.maven.plugin>4.4</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
     <protobuf.version>3.11.2</protobuf.version>
