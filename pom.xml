@@ -185,7 +185,7 @@
 		<hashicorp.boundary.sha512.darwin>
 			4d2bdad1b9589acd4e0f2902e2f4a7fad9a7054c19b604ef9e1775a9767850afbb510bcbd89d0f08a36ba0e5dcf8641f16e93ee4c33d9376b2403200ae462d46</hashicorp.boundary.sha512.darwin>
 		<hashicorp.boundary.sha512.linux>
-			907cf179434cb7f29ebaa8fd842bf990247412ca4c301f9e757258e593c8b906627a86ec2f61c155be2e4a3efe88dc7fec55fa98716b86c9659645e80d3cfdc5</hashicorp.boundary.sha512.linux>
+			df263859aa9872affd0f384f41374d13ea9469dc2191c704b970b6dac7d048e26b98e9046046bc750b44619a6a0104fd6cf35f09eaea76300514d26ae15fdba8</hashicorp.boundary.sha512.linux>
 		<hashicorp.boundary.sha512.windows>
 			6d8c418553aaed85bcd11fe3f9e532497b578c74cd26e66043a39d3715eb587abf2358c95ce5a7438abba57de991d321e097ac16bd9cb6328ef321aac4b66c11</hashicorp.boundary.sha512.windows>
 		<hashicorp.boundary.url>
