@@ -148,7 +148,7 @@
 		<maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
 		<maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
 		<maven.nexus.staging.plugin.skipStaging>false</maven.nexus.staging.plugin.skipStaging>
-		<maven.nexus.staging.plugin.version>1.7.0</maven.nexus.staging.plugin.version>
+		<maven.nexus.staging.plugin.version>1.6.14</maven.nexus.staging.plugin.version>
 		<maven.pax.plugin.version>1.5</maven.pax.plugin.version>
 		<maven.pdf.plugin.version>1.6.1</maven.pdf.plugin.version>
 		<maven.project.info.plugin.version>3.6.2</maven.project.info.plugin.version>
