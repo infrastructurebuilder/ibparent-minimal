@@ -24,7 +24,7 @@
 	<!-- A reasonable base group -->
 	<groupId>org.infrastructurebuilder</groupId>
 	<artifactId>ibparent-minimal</artifactId>
-	<version>83-SNAPSHOT</version>
+	<version>82-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<name>${project.artifactId}</name>
