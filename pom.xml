@@ -298,7 +298,7 @@
 		<alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
 		<animal.sniffer.maven.plugin.version>1.24</animal.sniffer.maven.plugin.version>
 		<dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
-		<dbunit.version>2.8.0</dbunit.version>
+		<dbunit.version>3.0.0</dbunit.version>
 		<doxia.site.renderer.version>2.0.0</doxia.site.renderer.version>
 		<fabric8io.docker.maven.plugin.version>0.45.1</fabric8io.docker.maven.plugin.version>
 		<felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
