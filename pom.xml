@@ -379,6 +379,9 @@
           <groupId>au.com.acegi</groupId>
           <artifactId>xml-format-maven-plugin</artifactId>
           <version>${xml.format.maven.plugin.version}</version>
+          <configuration>
+            <includes>pom.xml</includes>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.infrastructurebuilder.maven</groupId>
