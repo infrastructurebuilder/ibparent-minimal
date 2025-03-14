@@ -379,6 +379,9 @@
           <groupId>au.com.acegi</groupId>
           <artifactId>xml-format-maven-plugin</artifactId>
           <version>${xml.format.maven.plugin.version}</version>
+          <configuration>
+            <includes>pom.xml</includes>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.infrastructurebuilder.maven</groupId>
@@ -881,25 +884,6 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>au.com.acegi</groupId>
-        <artifactId>xml-format-maven-plugin</artifactId>
-        <configuration>
-          <!-- configure your formatting preferences here (see link below) -->
-          <indentSize>${indent.size}</indentSize>
-          <lineLength>${line.length}</lineLength>
-          <keepBlankLines>true</keepBlankLines>
-        </configuration>
-        <executions>
-          <execution>
-            <id>xml-format</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>xml-check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-invoker-plugin</artifactId>
       </plugin>
@@ -1187,6 +1171,25 @@
       <id>release</id>
       <build>
         <plugins>
+          <plugin>
+            <groupId>au.com.acegi</groupId>
+            <artifactId>xml-format-maven-plugin</artifactId>
+            <configuration>
+              <!-- configure your formatting preferences here (see link below) -->
+              <indentSize>${indent.size}</indentSize>
+              <lineLength>${line.length}</lineLength>
+              <keepBlankLines>true</keepBlankLines>
+            </configuration>
+            <executions>
+              <execution>
+                <id>xml-format</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>xml-check</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
