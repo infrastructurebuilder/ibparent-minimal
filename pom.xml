@@ -373,6 +373,7 @@
           <artifactId>xml-format-maven-plugin</artifactId>
           <version>${xml.format.maven.plugin.version}</version>
           <configuration>
+            <skip>true</skip>
             <includes>pom.xml</includes>
           </configuration>
         </plugin>
