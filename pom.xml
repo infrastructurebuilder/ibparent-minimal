@@ -24,7 +24,7 @@
   <!-- A reasonable base group -->
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>ibparent-minimal</artifactId>
-  <version>86-SNAPSHOT</version>
+  <version>86</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Root POM set for IB projects</description>
@@ -71,7 +71,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>HEAD</tag>
+    <tag>ibparent-minimal-86</tag>
   </scm>
   <issueManagement>
     <url>${issue.management.url}</url>
@@ -468,7 +468,7 @@
               <requireMavenVersion>
                 <version>[${enforcer.maven.version},)</version>
               </requireMavenVersion>
-              <banDuplicatePomDependencyVersions/>
+              <banDuplicatePomDependencyVersions />
               <!-- <requireNoRepositories /> -->
               <!--  unfortunately too restrictive -->
             </rules>
@@ -497,7 +497,7 @@
             <pomIncludes>
               <pomInclude>*/pom.xml</pomInclude>
             </pomIncludes>
-            <filterProperties/>
+            <filterProperties />
           </configuration>
         </plugin>
         <plugin>
@@ -826,7 +826,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -840,7 +840,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -853,7 +853,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -866,7 +866,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
