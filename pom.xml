@@ -1167,6 +1167,7 @@
             <artifactId>xml-format-maven-plugin</artifactId>
             <configuration>
               <!-- configure your formatting preferences here (see link below) -->
+              <skip>true</skip>
               <indentSize>${indent.size}</indentSize>
               <lineLength>${line.length}</lineLength>
               <keepBlankLines>true</keepBlankLines>
