@@ -25,7 +25,7 @@
   <!-- A reasonable base group -->
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>ibparent-minimal</artifactId>
-  <version>86-SNAPSHOT</version>
+  <version>87-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.artifactId}</name>
@@ -380,6 +380,7 @@
           <artifactId>xml-format-maven-plugin</artifactId>
           <version>${xml.format.maven.plugin.version}</version>
           <configuration>
+            <skip>true</skip>
             <includes>pom.xml</includes>
           </configuration>
         </plugin>
@@ -475,7 +476,7 @@
               <requireMavenVersion>
                 <version>[${enforcer.maven.version},)</version>
               </requireMavenVersion>
-              <banDuplicatePomDependencyVersions/>
+              <banDuplicatePomDependencyVersions />
               <!-- <requireNoRepositories /> -->
               <!--  unfortunately too restrictive -->
             </rules>
@@ -504,7 +505,7 @@
             <pomIncludes>
               <pomInclude>*/pom.xml</pomInclude>
             </pomIncludes>
-            <filterProperties/>
+            <filterProperties />
           </configuration>
         </plugin>
         <plugin>
@@ -833,7 +834,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -847,7 +848,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -860,7 +861,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -873,7 +874,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore/>
+                    <ignore />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -883,25 +884,6 @@
       </plugins>
     </pluginManagement>
     <plugins>
-      <plugin>
-        <groupId>au.com.acegi</groupId>
-        <artifactId>xml-format-maven-plugin</artifactId>
-        <configuration>
-          <!-- configure your formatting preferences here (see link below) -->
-          <indentSize>${indent.size}</indentSize>
-          <lineLength>${line.length}</lineLength>
-          <keepBlankLines>true</keepBlankLines>
-        </configuration>
-        <executions>
-          <execution>
-            <id>xml-format</id>
-            <phase>validate</phase>
-            <goals>
-              <goal>xml-check</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-invoker-plugin</artifactId>
@@ -1190,6 +1172,27 @@
       <id>release</id>
       <build>
         <plugins>
+          <plugin>
+            <groupId>au.com.acegi</groupId>
+            <artifactId>xml-format-maven-plugin</artifactId>
+            <configuration>
+              <!-- configure your formatting preferences here (see link below) -->
+              <skip>true</skip>
+              <indentSize>${indent.size}</indentSize>
+              <lineLength>${line.length}</lineLength>
+              <keepBlankLines>true</keepBlankLines>
+              <skipTargetFolder>true</skipTargetFolder>
+            </configuration>
+            <executions>
+              <execution>
+                <id>xml-format</id>
+                <phase>validate</phase>
+                <goals>
+                  <goal>xml-check</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
