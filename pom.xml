@@ -266,13 +266,13 @@
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
     <protobuf.version>3.11.2</protobuf.version>
-    <sonar.maven.plugin.version>5.0.0.4389</sonar.maven.plugin.version>
+    <sonar.maven.plugin.version>5.1.0.4751</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.10.0</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>3.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.4.0</tidy.pom.maven.plugin.version>
     <vertx.version>5.0.0.CR5</vertx.version>
-    <xml.format.maven.plugin.version>4.0.1</xml.format.maven.plugin.version>
+    <xml.format.maven.plugin.version>4.1.0</xml.format.maven.plugin.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
     <!-- Reformatting config -->
     <line.length>132</line.length>
