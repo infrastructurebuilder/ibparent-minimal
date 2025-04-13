@@ -19,7 +19,7 @@
     @formatter:on
 
 -->
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <!-- A reasonable base group -->
@@ -102,6 +102,7 @@
     <test.coverage.percentage.required>95</test.coverage.percentage.required>
     <gpg.signing.profiles>run-its,release,IBgpgsigning</gpg.signing.profiles>
     <skip.invoker>false</skip.invoker>
+    <xml.format.skip>false</xml.format.skip>
     <maven.version>3.9.9</maven.version>
     <maven.bom.version>${maven.version}.0</maven.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
@@ -248,7 +249,7 @@
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
     <dbunit.version>3.0.0</dbunit.version>
     <doxia.site.renderer.version>2.0.0</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.45.1</fabric8io.docker.maven.plugin.version>
+    <fabric8io.docker.maven.plugin.version>0.46.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.7.0</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>1.15.1</frontend.maven.plugin.version>
@@ -380,7 +381,7 @@
           <artifactId>xml-format-maven-plugin</artifactId>
           <version>${xml.format.maven.plugin.version}</version>
           <configuration>
-            <skip>true</skip>
+            <skip>${xml.format.skip}</skip>
             <includes>pom.xml</includes>
           </configuration>
         </plugin>
@@ -476,7 +477,7 @@
               <requireMavenVersion>
                 <version>[${enforcer.maven.version},)</version>
               </requireMavenVersion>
-              <banDuplicatePomDependencyVersions />
+              <banDuplicatePomDependencyVersions/>
               <!-- <requireNoRepositories /> -->
               <!--  unfortunately too restrictive -->
             </rules>
@@ -505,7 +506,7 @@
             <pomIncludes>
               <pomInclude>*/pom.xml</pomInclude>
             </pomIncludes>
-            <filterProperties />
+            <filterProperties/>
           </configuration>
         </plugin>
         <plugin>
@@ -834,7 +835,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -848,7 +849,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -861,7 +862,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -874,7 +875,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -1170,6 +1171,9 @@
     </profile>
     <profile>
       <id>release</id>
+      <properties>
+        <xml.format.skip>true</xml.format.skip>
+      </properties>
       <build>
         <plugins>
           <plugin>
