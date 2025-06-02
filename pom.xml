@@ -25,7 +25,7 @@
   <!-- A reasonable base group -->
   <groupId>org.infrastructurebuilder</groupId>
   <artifactId>ibparent-minimal</artifactId>
-  <version>91</version>
+  <version>92-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.artifactId}</name>
@@ -75,7 +75,7 @@
     <connection>scm:git:${git.url}</connection>
     <developerConnection>scm:git:${git.url}</developerConnection>
     <url>${git.scm.url}</url>
-    <tag>ibparent-minimal-91</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <url>${issue.management.url}</url>
