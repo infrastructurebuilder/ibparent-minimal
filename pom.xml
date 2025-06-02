@@ -258,7 +258,7 @@
     <google.protoc.version>3.11.2</google.protoc.version>
     <jgit.version>5.12.0.202106070339-r</jgit.version>
     <jsr305.version>3.0.2</jsr305.version>
-    <junit.bom.version>5.12.0</junit.bom.version>
+    <junit.bom.version>5.13.0</junit.bom.version>
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
@@ -272,7 +272,7 @@
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
     <templating.maven.plugin.version>3.0.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.4.0</tidy.pom.maven.plugin.version>
-    <vertx.version>5.0.0.CR5</vertx.version>
+    <vertx.version>5.0.0</vertx.version>
     <xml.format.maven.plugin.version>4.1.0</xml.format.maven.plugin.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
     <!-- Reformatting config -->
