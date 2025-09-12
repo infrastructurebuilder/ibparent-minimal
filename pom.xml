@@ -138,6 +138,7 @@
     <maven.archiver.version>3.6.3</maven.archiver.version>
     <maven.assembly.plugin.version>3.7.1</maven.assembly.plugin.version>
     <maven.build.helper.plugin.version>3.6.1</maven.build.helper.plugin.version>
+    <maven.central.publishing.plugin.version>0.8.0</maven.central.publishing.plugin.version>
     <maven.changelog.plugin.version>3.0.0-M1</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
     <maven.clean.plugin.version>3.4.1</maven.clean.plugin.version>
@@ -699,6 +700,16 @@
           <version>${liquibase.version}</version>
         </plugin>
         <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>${maven.central.publishing.plugin.version}</version>
+          <extensions>true</extensions>
+          <configuration>
+            <publishingServerId>central</publishingServerId>
+          </configuration>
+        </plugin>
+<!--
+        <plugin>
           <groupId>org.sonatype.plugins</groupId>
           <artifactId>nexus-staging-maven-plugin</artifactId>
           <version>${maven.nexus.staging.plugin.version}</version>
@@ -711,6 +722,7 @@
             <stagingProgressTimeoutMinutes>10</stagingProgressTimeoutMinutes>
           </configuration>
         </plugin>
+-->
         <plugin>
           <groupId>org.xolstice.maven.plugins</groupId>
           <artifactId>protobuf-maven-plugin</artifactId>
@@ -1036,10 +1048,16 @@
         </executions>
       </plugin>
       <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+	  </plugin>
+<!--
+      <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <extensions>true</extensions>
       </plugin>
+-->
     </plugins>
     <extensions>
       <extension>
