@@ -707,6 +707,9 @@
           <extensions>true</extensions>
           <configuration>
             <publishingServerId>central</publishingServerId>
+            <autoPublish>true</autoPublish>
+            <deploymentName>${project.artifactId}-${project.version}</deploymentName>
+            <waitUntil>published</waitUntil>
           </configuration>
         </plugin>
 <!--
