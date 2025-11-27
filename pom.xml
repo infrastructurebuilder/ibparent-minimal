@@ -478,7 +478,7 @@
               <requireMavenVersion>
                 <version>[${enforcer.maven.version},)</version>
               </requireMavenVersion>
-              <banDuplicatePomDependencyVersions />
+              <banDuplicatePomDependencyVersions/>
               <!-- <requireNoRepositories /> -->
               <!--  unfortunately too restrictive -->
             </rules>
@@ -507,7 +507,7 @@
             <pomIncludes>
               <pomInclude>*/pom.xml</pomInclude>
             </pomIncludes>
-            <filterProperties />
+            <filterProperties/>
           </configuration>
         </plugin>
         <plugin>
@@ -711,7 +711,7 @@
             <waitUntil>published</waitUntil>
           </configuration>
         </plugin>
-<!--
+        <!--
         <plugin>
           <groupId>org.sonatype.plugins</groupId>
           <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -850,7 +850,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -864,7 +864,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -877,7 +877,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -890,7 +890,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -908,7 +908,7 @@
         <groupId>${maven.download.plugin.groupId}</groupId>
         <artifactId>download-maven-plugin</artifactId>
         <executions>
-<!--        
+          <!--        
           <execution>
             <id>getboundary</id>
             <phase>validate</phase>
@@ -1026,7 +1026,7 @@
               <sha512>${hashicorp.waypoint.download.sha512}</sha512>
             </configuration>
           </execution>
--->          
+-->
         </executions>
       </plugin>
       <plugin>
@@ -1053,10 +1053,10 @@
         </executions>
       </plugin>
       <plugin>
-          <groupId>org.sonatype.central</groupId>
-          <artifactId>central-publishing-maven-plugin</artifactId>
-	  </plugin>
-<!--
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+      </plugin>
+      <!--
       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
