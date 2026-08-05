@@ -133,26 +133,26 @@
     <groovy.bom.version>${groovy.version}.1</groovy.bom.version>
     <groovy.version>3.0.8</groovy.version>
     <ib.source.formats.version>0.3.0</ib.source.formats.version>
-    <maven.antrun.plugin.version>3.1.0</maven.antrun.plugin.version>
-    <maven.archetype.plugin.version>3.4.0</maven.archetype.plugin.version>
+    <maven.antrun.plugin.version>3.2.0</maven.antrun.plugin.version>
+    <maven.archetype.plugin.version>3.4.1</maven.archetype.plugin.version>
     <maven.archiver.version>3.6.3</maven.archiver.version>
-    <maven.assembly.plugin.version>3.7.1</maven.assembly.plugin.version>
+    <maven.assembly.plugin.version>3.8.0</maven.assembly.plugin.version>
     <maven.build.helper.plugin.version>3.6.1</maven.build.helper.plugin.version>
-    <maven.central.publishing.plugin.version>0.8.0</maven.central.publishing.plugin.version>
-    <maven.changelog.plugin.version>3.0.0-M1</maven.changelog.plugin.version>
+    <maven.central.publishing.plugin.version>0.11.0</maven.central.publishing.plugin.version>
+    <maven.changelog.plugin.version>3.0.0-M2</maven.changelog.plugin.version>
     <maven.changes.plugin.version>2.12.1</maven.changes.plugin.version>
-    <maven.clean.plugin.version>3.4.1</maven.clean.plugin.version>
-    <maven.dependency.plugin.version>3.8.1</maven.dependency.plugin.version>
-    <maven.deploy.plugin.version>3.1.4</maven.deploy.plugin.version>
+    <maven.clean.plugin.version>3.5.0</maven.clean.plugin.version><!-- last pre-4.x; 4.x requires maven 4 -->
+    <maven.dependency.plugin.version>3.11.0</maven.dependency.plugin.version>
+    <maven.deploy.plugin.version>3.1.4</maven.deploy.plugin.version><!-- last pre-4.x; 4.x requires maven 4 -->
     <maven.download.plugin.version>1.7.1.2</maven.download.plugin.version>
     <maven.doxia.version>1.12.0</maven.doxia.version>
-    <maven.enforcer.plugin.version>3.6.1</maven.enforcer.plugin.version>
-    <maven.exec.plugin.version>3.5.1</maven.exec.plugin.version>
+    <maven.enforcer.plugin.version>3.6.3</maven.enforcer.plugin.version>
+    <maven.exec.plugin.version>3.6.3</maven.exec.plugin.version>
     <maven.filtering.version>3.4.0</maven.filtering.version>
     <maven.gpg.plugin.version>3.2.8</maven.gpg.plugin.version>
     <maven.graph.plugin.version>1.2.3</maven.graph.plugin.version>
-    <maven.install.plugin.version>3.1.4</maven.install.plugin.version>
-    <maven.invoker.plugin.version>3.9.1</maven.invoker.plugin.version>
+    <maven.install.plugin.version>3.1.4</maven.install.plugin.version><!-- last pre-4.x; 4.x requires maven 4 -->
+    <maven.invoker.plugin.version>3.10.1</maven.invoker.plugin.version>
     <maven.jar.plugin.version>3.2.0</maven.jar.plugin.version>
     <maven.jarsigner.plugin.version>3.0.0</maven.jarsigner.plugin.version>
     <maven.nexus.staging.plugin.version>1.7.0</maven.nexus.staging.plugin.version>
@@ -164,24 +164,24 @@
     <maven.project.info.plugin.version>3.9.0</maven.project.info.plugin.version>
     <maven.project.version>3.0-alpha-2</maven.project.version>
     <maven.properties.plugin.version>1.2.1.0-ib</maven.properties.plugin.version>
-    <maven.release.plugin.version>3.1.1</maven.release.plugin.version>
+    <maven.release.plugin.version>3.3.1</maven.release.plugin.version>
     <maven.remote.resources.version>3.3.0</maven.remote.resources.version>
     <maven.reporting.api.version>3.1.1</maven.reporting.api.version>
     <maven.reporting.impl.version>3.2.0</maven.reporting.impl.version>
     <maven.resolver.version>2.0.7</maven.resolver.version>
     <!-- 1.9.22 -->
-    <maven.resources.plugin.version>3.3.1</maven.resources.plugin.version>
+    <maven.resources.plugin.version>3.5.0</maven.resources.plugin.version><!-- last pre-4.x; 4.x requires maven 4 -->
     <maven.s3.wagon.version>1.3.3</maven.s3.wagon.version>
-    <maven.shared.filtering.version>3.4.0</maven.shared.filtering.version>
+    <maven.shared.filtering.version>3.5.1</maven.shared.filtering.version><!-- last pre-4.x; 4.x requires maven 4 -->
     <maven.shared.utils.version>3.4.2</maven.shared.utils.version>
     <maven.site.doxia.model.version>1.12.0</maven.site.doxia.model.version>
     <maven.site.fluido.skin.version>1.7</maven.site.fluido.skin.version>
-    <maven.site.plugin.version>3.21.0</maven.site.plugin.version>
+    <maven.site.plugin.version>3.22.0</maven.site.plugin.version><!-- last pre-4.x; 4.x requires maven 4 -->
     <maven.sonar.plugin.version>3.7.0.1746</maven.sonar.plugin.version>
-    <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
-    <maven.toolchains.plugin.version>3.2.0</maven.toolchains.plugin.version>
+    <maven.source.plugin.version>3.4.0</maven.source.plugin.version><!-- last pre-4.x; 4.x requires maven 4 -->
+    <maven.toolchains.plugin.version>3.3.0</maven.toolchains.plugin.version>
     <maven.toolchains.jdk.version>21</maven.toolchains.jdk.version>
-    <maven.versions.plugin.version>2.19.0</maven.versions.plugin.version>
+    <maven.versions.plugin.version>2.21.0</maven.versions.plugin.version>
     <maven.wagon.version>3.5.3</maven.wagon.version>
     <!-- -->
     <hashicorp.boundary.sha512.darwin>4d2bdad1b9589acd4e0f2902e2f4a7fad9a7054c19b604ef9e1775a9767850afbb510bcbd89d0f08a36ba0e5dcf8641f16e93ee4c33d9376b2403200ae462d46</hashicorp.boundary.sha512.darwin>
@@ -246,34 +246,34 @@
     <hashicorp.waypoint.version>0.11.4</hashicorp.waypoint.version>
     <hashicorp.waypoint.download.skip>true</hashicorp.waypoint.download.skip>
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
-    <animal.sniffer.maven.plugin.version>1.24</animal.sniffer.maven.plugin.version>
+    <animal.sniffer.maven.plugin.version>1.27</animal.sniffer.maven.plugin.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
-    <dbunit.version>3.0.0</dbunit.version>
-    <doxia.site.renderer.version>2.0.0</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.46.0</fabric8io.docker.maven.plugin.version>
+    <dbunit.version>3.4.0</dbunit.version>
+    <doxia.site.renderer.version>2.1.0</doxia.site.renderer.version>
+    <fabric8io.docker.maven.plugin.version>0.48.1</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
-    <flatten.maven.plugin.version>1.7.3</flatten.maven.plugin.version>
-    <frontend.maven.plugin.version>1.15.1</frontend.maven.plugin.version>
+    <flatten.maven.plugin.version>1.8.0</flatten.maven.plugin.version>
+    <frontend.maven.plugin.version>2.0.2</frontend.maven.plugin.version>
     <gitlog.maven.plugin.version>1.14.0</gitlog.maven.plugin.version>
     <google.protoc.includeStdTypes>true</google.protoc.includeStdTypes>
     <google.protoc.version>3.11.2</google.protoc.version>
     <jgit.version>5.12.0.202106070339-r</jgit.version>
     <jsr305.version>3.0.2</jsr305.version>
-    <junit.bom.version>5.13.4</junit.bom.version>
+    <junit.bom.version>6.1.2</junit.bom.version>
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>4.33.0</liquibase.version>
-    <mycila.license.maven.plugin>4.6</mycila.license.maven.plugin>
+    <liquibase.version>5.0.3</liquibase.version>
+    <mycila.license.maven.plugin>5.1.1</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
     <protobuf.version>3.11.2</protobuf.version>
-    <sonar.maven.plugin.version>5.2.0.4988</sonar.maven.plugin.version>
+    <sonar.maven.plugin.version>5.7.0.6970</sonar.maven.plugin.version>
     <spf4j.jdiff.maven.plugin.version>8.10.0</spf4j.jdiff.maven.plugin.version>
     <spotify.docker.maven.plugin.version>1.2.2</spotify.docker.maven.plugin.version>
-    <templating.maven.plugin.version>3.0.0</templating.maven.plugin.version>
+    <templating.maven.plugin.version>3.1.0</templating.maven.plugin.version>
     <tidy.pom.maven.plugin.version>1.4.0</tidy.pom.maven.plugin.version>
-    <vertx.version>5.0.4</vertx.version>
+    <vertx.version>5.1.6</vertx.version>
     <xml.format.maven.plugin.version>4.1.0</xml.format.maven.plugin.version>
     <xolstice.protobuf.maven.plugin.version>0.6.1</xolstice.protobuf.maven.plugin.version>
     <!-- Reformatting config -->
