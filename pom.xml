@@ -103,8 +103,8 @@
     <gpg.signing.profiles>run-its,release,IBgpgsigning</gpg.signing.profiles>
     <skip.invoker>false</skip.invoker>
     <xml.format.skip>false</xml.format.skip>
-    <maven.version>3.9.11</maven.version>
-    <maven.bom.version>${maven.version}.1-SNAPSHOT</maven.bom.version>
+    <maven.version>3.9.16</maven.version>
+    <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
     <expected.instant.format>yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS'Z'</expected.instant.format>
     <git.http.url>${git.scm.url}.git</git.http.url>
