@@ -104,7 +104,7 @@
     <skip.invoker>false</skip.invoker>
     <xml.format.skip>false</xml.format.skip>
     <maven.version>3.9.16</maven.version>
-    <maven.bom.version>${maven.version}.0-SNAPSHOT</maven.bom.version>
+    <maven.bom.version>${maven.version}.0</maven.bom.version>
     <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>
     <expected.instant.format>yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSS'Z'</expected.instant.format>
     <git.http.url>${git.scm.url}.git</git.http.url>
@@ -250,7 +250,7 @@
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
     <dbunit.version>3.4.0</dbunit.version>
     <doxia.site.renderer.version>2.1.0</doxia.site.renderer.version>
-    <fabric8io.docker.maven.plugin.version>0.48.1</fabric8io.docker.maven.plugin.version>
+    <fabric8io.docker.maven.plugin.version>0.49.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
     <flatten.maven.plugin.version>1.8.0</flatten.maven.plugin.version>
     <frontend.maven.plugin.version>2.0.2</frontend.maven.plugin.version>
@@ -259,7 +259,7 @@
     <google.protoc.version>3.11.2</google.protoc.version>
     <jgit.version>5.12.0.202106070339-r</jgit.version>
     <jsr305.version>3.0.2</jsr305.version>
-    <junit.bom.version>6.1.2</junit.bom.version>
+    <junit.bom.version>6.1.3</junit.bom.version>
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
@@ -1099,6 +1099,32 @@
   </reporting>
 
   <profiles>
+    <profile>
+      <!--
+        Applies versions-rules.xml to every versions:* goal, so update-properties stops
+        proposing pre-release qualifiers and the maven 4 line of maven's own artifacts.
+        Activated by the file's presence: inheritors without the file are unaffected.
+      -->
+      <id>versions-rules</id>
+      <activation>
+        <file>
+          <exists>${basedir}/versions-rules.xml</exists>
+        </file>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>versions-maven-plugin</artifactId>
+              <configuration>
+                <rulesUri>file://${basedir}/versions-rules.xml</rulesUri>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
     <profile>
       <id>run-its</id>
       <activation>
