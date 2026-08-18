@@ -94,7 +94,9 @@
 
   <properties>
     <team.group.id>infrastructurebuilder</team.group.id>
-    <java.17.version>17.0.9-amzn</java.17.version>
+    <java.25.version>25.0.4-amzn</java.25.version>
+    <java.21.version>21.0.12-amzn</java.21.version>
+    <java.17.version>17.0.20-amzn</java.17.version>
     <java.11.version>11.0.21-amzn</java.11.version>
     <java.8.version>8.0.392-amzn</java.8.version>
     <maven.nexus.staging.plugin.skipStaging>false</maven.nexus.staging.plugin.skipStaging>
@@ -248,7 +250,7 @@
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
     <animal.sniffer.maven.plugin.version>1.27</animal.sniffer.maven.plugin.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
-    <dbunit.version>3.4.0</dbunit.version>
+    <dbunit.version>3.5.0</dbunit.version>
     <doxia.site.renderer.version>2.1.0</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.49.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
