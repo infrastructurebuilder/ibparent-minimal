@@ -250,7 +250,7 @@
     <alex.nederlof.jasperreports.plugin.version>2.8</alex.nederlof.jasperreports.plugin.version>
     <animal.sniffer.maven.plugin.version>1.27</animal.sniffer.maven.plugin.version>
     <dbunit.maven.version>1.0-beta-3</dbunit.maven.version>
-    <dbunit.version>3.5.0</dbunit.version>
+    <dbunit.version>3.5.1</dbunit.version>
     <doxia.site.renderer.version>2.1.0</doxia.site.renderer.version>
     <fabric8io.docker.maven.plugin.version>0.49.0</fabric8io.docker.maven.plugin.version>
     <felix.bundle.plugin.version>4.2.1</felix.bundle.plugin.version>
@@ -265,8 +265,8 @@
     <junit.version>4.13.2</junit.version>
     <kr.motd.maven.plugin.version>1.7.1</kr.motd.maven.plugin.version>
     <license.maven.plugin.version>2.0.0</license.maven.plugin.version>
-    <liquibase.version>5.0.3</liquibase.version>
-    <mycila.license.maven.plugin>5.1.1</mycila.license.maven.plugin>
+    <liquibase.version>5.0.4</liquibase.version>
+    <mycila.license.maven.plugin>5.1.2</mycila.license.maven.plugin>
     <os72.protoc.maven.plugin.version>3.11.4</os72.protoc.maven.plugin.version>
     <ounce.maven.plugin.version>1.6.3</ounce.maven.plugin.version>
     <protobuf.version>3.11.2</protobuf.version>
